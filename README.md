@@ -1,2 +1,3 @@
-# website-fontainetkd
-Website of the Fontaine Taekwon-Do club
+# Fontaine Taekwon-Do
+
+Website of the Fontaine Taekwon-Do club.
