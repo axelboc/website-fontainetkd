@@ -1,0 +1,81 @@
+.header {
+  composes: max from global;
+  margin-bottom: 5rem;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.logo {
+  margin-bottom: 1rem;
+}
+
+.title {
+  position: relative;
+  display: inline-flex;
+  width: min-content;
+  margin-bottom: 2.5rem;
+  font-size: 300%;
+  font-family: var(--font-title);
+  line-height: 1;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+}
+
+.title::after {
+  position: absolute;
+  right: 0;
+  bottom: -0.875rem;
+  left: 0;
+  border-bottom: 0.625rem double var(--lochmara);
+  content: '';
+}
+
+.intro {
+  max-width: 30em;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 112.5%;
+  text-align: left;
+}
+
+@media (width >= 32em) {
+  .title {
+    width: auto;
+  }
+}
+
+@media (width >= 50em) {
+  .header {
+    display: flex;
+    justify-content: center;
+    padding-top: 4.5rem;
+    text-align: left;
+  }
+
+  .logo {
+    flex: none;
+  }
+
+  .inner {
+    flex: 0 1 auto;
+    margin-left: 1.5rem;
+  }
+
+  .intro {
+    margin: 0;
+  }
+}
+
+@media (width >= 50em) {
+  .logo {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (width >= 75em) {
+  .logo {
+    width: 250px;
+    height: 250px;
+  }
+}

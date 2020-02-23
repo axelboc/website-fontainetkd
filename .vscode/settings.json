@@ -16,9 +16,8 @@
   // Workaround for slow stylelint fixer
   // https://github.com/stylelint/vscode-stylelint/issues/45
   "[css]": {
-    "editor.codeActionsOnSaveTimeout": 5000,
     "editor.codeActionsOnSave": {
-      "source.fixAll.stylelint": true
+      // "source.fixAll.stylelint": true
     }
   }
 }

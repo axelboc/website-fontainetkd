@@ -1,3 +1,19 @@
 :root {
-  --primary: #fff000;
+  /* Colours */
+  --minsk: #2b3990;
+  --lochmara: #1b75bc;
+  --candlelight: #fdd914;
+  --black-russian: #0d0221;
+  --link-water: #dcedff;
+
+  /* Fonts */
+  --font-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Helvetica Neue', 'Arial', 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-title: 'Sitdown', var(--font-base);
+}
+
+@font-face {
+  font-family: 'Sitdown';
+  src: url('../assets/sitdown.otf') format('opentype');
 }
