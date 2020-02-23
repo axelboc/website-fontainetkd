@@ -1,7 +1,7 @@
 .header {
   composes: max from global;
-  margin-bottom: 5rem;
   padding-top: 2rem;
+  padding-bottom: 2rem;
   text-align: center;
 }
 
@@ -48,12 +48,15 @@
   .header {
     display: flex;
     justify-content: center;
-    padding-top: 4.5rem;
+    padding-top: 6rem;
+    padding-bottom: 5rem;
     text-align: left;
   }
 
   .logo {
     flex: none;
+    width: 200px;
+    height: 200px;
   }
 
   .inner {
@@ -66,14 +69,32 @@
   }
 }
 
-@media (width >= 50em) {
-  .logo {
-    width: 200px;
-    height: 200px;
+@media (width >= 80em) {
+  .root {
+    position: relative;
   }
-}
 
-@media (width >= 75em) {
+  .root::before,
+  .root::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 12rem;
+    background-color: var(--candlelight);
+    content: '';
+  }
+
+  .root::before {
+    left: 0;
+    clip-path: polygon(0 0, 40% 0, 100% 100%, 0 100%);
+  }
+
+  .root::after {
+    right: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%);
+  }
+
   .logo {
     width: 250px;
     height: 250px;
