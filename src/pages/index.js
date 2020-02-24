@@ -13,7 +13,7 @@ function IndexPage() {
   return (
     <>
       <Banner />
-      <main className="inverted">
+      <main>
         <Sections />
         <Horaires />
         <Adhesion />

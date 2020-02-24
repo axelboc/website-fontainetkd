@@ -10,6 +10,7 @@
 }
 
 .title {
+  composes: heading from global;
   position: relative;
   display: inline-flex;
   width: min-content;
@@ -18,7 +19,6 @@
   font-family: var(--font-title);
   line-height: 1;
   letter-spacing: 0.015em;
-  text-transform: uppercase;
 }
 
 .title::after {

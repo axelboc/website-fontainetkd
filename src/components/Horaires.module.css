@@ -1,0 +1,3 @@
+.heading {
+  composes: heading from global;
+}

@@ -46,3 +46,9 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+
+.heading {
+  font-family: var(--font-heading);
+  letter-spacing: 0.0375em;
+  text-transform: uppercase;
+}

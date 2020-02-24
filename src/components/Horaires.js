@@ -1,9 +1,11 @@
 import React from 'react';
 
+import styles from './Horaires.module.css';
+
 function Horaires() {
   return (
     <section id="horaires">
-      <h2>Horaires</h2>
+      <h2 className={styles.heading}>Horaires</h2>
       <h3>Mardi - Gymnase Robert Vial</h3>
       <ul>
         <li>18h - 19h : Section enfants</li>

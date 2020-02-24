@@ -1,11 +1,13 @@
 import React from 'react';
 
+import styles from './Sections.module.css';
+
 function Sections() {
   return (
     <div id="sections">
       <article>
         <header>
-          <h2>Section enfants</h2>
+          <h2 className={styles.heading}>Section enfants</h2>
           <p>de 6 à 9 ans</p>
         </header>
         <ul>
@@ -17,7 +19,7 @@ function Sections() {
       </article>
       <article>
         <header>
-          <h2>Section ados &amp; adultes</h2>
+          <h2 className={styles.heading}>Section ados &amp; adultes</h2>
           <p>à partir de 10 ans</p>
         </header>
         <ul>
