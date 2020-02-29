@@ -1,11 +1,12 @@
 import React from 'react';
 
 import styles from './Adhesion.module.css';
+import Heading from './Heading';
 
 function Adhesion() {
   return (
     <section id="adhesion">
-      <h2 className={styles.heading}>Adhésion</h2>
+      <Heading>Adhésion</Heading>
       <ul>
         <li>
           <h3>De 6 à 15 ans</h3>

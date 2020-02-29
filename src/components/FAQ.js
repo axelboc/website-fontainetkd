@@ -1,11 +1,12 @@
 import React from 'react';
 
 import styles from './FAQ.module.css';
+import Heading from './Heading';
 
 function FAQ() {
   return (
     <section id="faq">
-      <h2 className={styles.heading}>FAQ</h2>
+      <Heading>FAQ</Heading>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi rem
         error, ab corrupti, tempore provident reiciendis maxime fugiat dolor

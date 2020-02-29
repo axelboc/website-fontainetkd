@@ -1,0 +1,32 @@
+.heading {
+  composes: heading from global;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  padding: 1rem 1.5rem;
+  color: white;
+  background-color: var(--minsk);
+}
+
+.title {
+  margin-right: 1.5rem;
+}
+
+.sub {
+  margin-top: 0.25rem;
+  color: var(--candlelight);
+  font-size: 75%;
+}
+
+@media (width >= 30em) {
+  .heading {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (width >= 40em) {
+  .heading {
+    flex-direction: row;
+    align-items: center;
+  }
+}
