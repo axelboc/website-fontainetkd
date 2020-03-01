@@ -1,7 +1,7 @@
 import React from 'react';
 
-import styles from './Horaires.module.css';
 import Heading from './Heading';
+import styles from './Horaires.module.css';
 
 function Horaires() {
   return (

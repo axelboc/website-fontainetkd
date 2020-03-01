@@ -1,15 +1,14 @@
 import React from 'react';
 
 import Logo from '../assets/fontaine-taekwondo.svg';
-import Nav from '../components/Nav';
 import styles from './Banner.module.css';
 
 function Banner() {
   return (
-    <div className={styles.root}>
-      <header className={styles.header}>
+    <header className={styles.header}>
+      <div className={styles.inner}>
         <Logo className={styles.logo} width="150" height="150" />
-        <div className={styles.inner}>
+        <div className={styles.content}>
           <h1 className={styles.title}>Fontaine Taekwon‑Do</h1>
           <div className={styles.intro}>
             <p>
@@ -23,10 +22,8 @@ function Banner() {
             </p>
           </div>
         </div>
-      </header>
-
-      <Nav />
-    </div>
+      </div>
+    </header>
   );
 }
 

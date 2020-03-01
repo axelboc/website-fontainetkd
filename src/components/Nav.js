@@ -5,20 +5,22 @@ import styles from './Nav.module.css';
 
 function Nav() {
   return (
-    <nav className={styles.nav}>
-      <AnchorLink to="/#sections">
-        <span className={styles.linkInner}>Sections</span>
-      </AnchorLink>
-      <AnchorLink to="/#horaires">
-        <span className={styles.linkInner}>Horaires</span>
-      </AnchorLink>
-      <AnchorLink to="/#adhesion">
-        <span className={styles.linkInner}>Adhésion</span>
-      </AnchorLink>
-      <AnchorLink to="/#faq">
-        <span className={styles.linkInner}>FAQ</span>
-      </AnchorLink>
-    </nav>
+    <div className={styles.sticky}>
+      <nav className={styles.nav}>
+        <AnchorLink to="/#sections">
+          <span className={styles.item}>Sections</span>
+        </AnchorLink>
+        <AnchorLink to="/#horaires">
+          <span className={styles.item}>Horaires</span>
+        </AnchorLink>
+        <AnchorLink to="/#adhesion">
+          <span className={styles.item}>Adhésion</span>
+        </AnchorLink>
+        <AnchorLink to="/#faq">
+          <span className={styles.item}>FAQ</span>
+        </AnchorLink>
+      </nav>
+    </div>
   );
 }
 

@@ -1,13 +1,25 @@
+.sticky {
+  position: sticky;
+  top: 0;
+  display: flex;
+  height: 3rem;
+  margin-top: -3rem;
+  background-color: white;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
 .nav {
   composes: max from global;
   display: flex;
+  flex: 1 1 0%;
   justify-content: space-around;
   margin: 0 -0.75rem;
 }
 
 .nav > a {
+  display: flex;
   flex: 1 1 auto;
-  padding: 0.75rem 0;
+  align-items: center;
   color: inherit;
   line-height: 1;
   text-decoration: none;
@@ -17,14 +29,15 @@
   }
 }
 
-.linkInner {
+.item {
   display: flex;
+  flex: 1 1 0%;
   align-items: center;
   justify-content: center;
   padding: 0 0.25rem 0.25rem;
 }
 
-a:not(:last-child) .linkInner {
+a:not(:last-child) .item {
   border-right: 1px solid var(--lochmara);
 }
 
@@ -43,7 +56,7 @@ a:not(:last-child) .linkInner {
     flex: none;
   }
 
-  .linkInner {
+  .item {
     padding: 0 3rem 0.25rem;
   }
 }

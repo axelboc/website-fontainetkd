@@ -1,4 +1,8 @@
 .header {
+  padding-bottom: 3rem;
+}
+
+.inner {
   composes: max from global;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -45,7 +49,7 @@
 }
 
 @media (width >= 50em) {
-  .header {
+  .inner {
     display: flex;
     justify-content: center;
     padding-top: 6rem;
@@ -59,7 +63,7 @@
     height: 200px;
   }
 
-  .inner {
+  .content {
     flex: 0 1 auto;
     margin-left: 1.5rem;
   }
@@ -70,27 +74,27 @@
 }
 
 @media (width >= 80em) {
-  .root {
+  .header {
     position: relative;
   }
 
-  .root::before,
-  .root::after {
+  .header::before,
+  .header::after {
     position: absolute;
     top: 0;
     bottom: 0;
-    z-index: -1;
+    z-index: 1;
     width: 12rem;
     background-color: var(--candlelight);
     content: '';
   }
 
-  .root::before {
+  .header::before {
     left: 0;
     clip-path: polygon(0 0, 40% 0, 100% 100%, 0 100%);
   }
 
-  .root::after {
+  .header::after {
     right: 0;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%);
   }
