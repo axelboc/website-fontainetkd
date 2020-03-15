@@ -36,9 +36,11 @@
     "normalize.css": "^8.0.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^6.0.0-beta"
+    "react-helmet": "^6.0.0-beta",
+    "react-icons": "^3.9.0"
   },
   "devDependencies": {
+    "@types/react": "^16.9.23",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-config-problems": "^4.0.0",

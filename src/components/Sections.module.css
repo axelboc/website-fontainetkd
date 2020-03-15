@@ -1,15 +1,22 @@
 .list {
   margin-bottom: 0;
-  padding: 1.5rem 1.5rem 1rem 2.5rem;
+  padding: 1.5rem 1.5rem 1rem;
+  list-style: none;
 }
 
 .list > li {
   margin-bottom: 0.5rem;
 }
 
+.icon {
+  margin-right: 0.5rem;
+  vertical-align: -0.1875rem;
+  stroke: var(--lochmara);
+}
+
 @media (width >= 30em) {
   .list {
-    padding: 2rem 2rem 2rem 3rem;
+    padding: 2rem;
   }
 }
 @media (width >= 50em) {
