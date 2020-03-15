@@ -9,10 +9,12 @@ import Footer from '../components/Footer';
 import Horaires from '../components/Horaires';
 import Nav from '../components/Nav';
 import Sections from '../components/Sections';
+import SEO from '../components/SEO';
 
 function IndexPage() {
   return (
     <>
+      <SEO />
       <Banner />
       <Nav />
       <main>
