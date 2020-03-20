@@ -12,6 +12,9 @@
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   --font-heading: 'Areno', var(--font-base);
   --font-title: 'Areno Rough', var(--font-base);
+
+  /* Stacking */
+  --zi-nav: 1;
 }
 
 @font-face {

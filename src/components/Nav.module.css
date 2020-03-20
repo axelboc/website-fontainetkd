@@ -1,6 +1,7 @@
 .sticky {
   position: sticky;
   top: 0;
+  z-index: var(--zi-nav);
   display: flex;
   height: 3rem;
   margin-top: -3rem;

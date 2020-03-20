@@ -27,13 +27,13 @@ function Adhesion() {
       </ul>
       <p>
         Les inscriptions sont ouvertes toute l’année. N’hésitez pas à venir nous
-        rencontrer lors de nos séances d’entraînements ! Nous serons également
-        présents au forum des sports de Fontaine, en septembre prochain.
+        rencontrer lors de nos séances d’entraînements ! Nous sommes également
+        présents chaque année au Forum des Sports de Fontaine, en septembre.
       </p>
       <p>
         L’assurance du club couvre tous les membres à jour de leur cotisation.
-        Notre instructrice est bénévole. Les cotisations servent au paiement des
-        frais de fonctionnement de l’association, à l’achat de matériel
+        Notre instructrice est bénévole ; les cotisations servent au paiement
+        des frais de fonctionnement de l’association, à l’achat de matériel
         d’entraînement, et à l’organisation ou à la participation à des
         événements sportifs (compétition, stage, etc.) et non sportifs (fête,
         barbecue, etc.)
