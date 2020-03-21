@@ -1,40 +1,45 @@
-.map {
+.root {
+  background-color: var(--lochmara);
+  padding: 8rem 0 8rem 4rem;
+}
+
+.inner {
   position: relative;
-  padding: 5rem;
+  overflow: hidden;
+  max-width: 56em;
+  background-color: var(--minsk);
 }
 
-.mapImg {
-  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
-}
-
-.tape {
+.inner::after {
+  --width: 8rem; /* MAGIC NUMBER based on element height and skew angle */
   position: absolute;
-  top: -1.5rem;
-  bottom: -1.5rem;
-  left: -1.5rem;
-  right: -1.5rem;
-  transform: rotate(45deg);
-}
-
-.tape::before,
-.tape::after {
-  position: absolute;
-  left: 50%;
-  width: 14rem;
-  height: 3rem;
-  transform: translateX(-50%);
-  background-color: var(--candlelight);
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-  opacity: 0.3;
+  top: 0;
+  bottom: 0;
+  right: calc(-1 * var(--width));
+  background-color: var(--minsk);
+  border-right: var(--width) solid var(--lochmara);
+  width: calc(3rem + var(--width));
+  transform: skew(10deg);
+  transform-origin: bottom right;
   content: '';
 }
 
-.tape::before {
-  top: 0;
+.map {
+  position: relative;
 }
 
-.tape::after {
-  bottom: 0;
+.mapImg {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.times {
+  padding-top: 0.25rem;
+}
+
+.entry {
+  margin-top: 1.25rem;
+  padding: 1rem;
+  background-color: #fff;
 }
 
 @media (width >= 80em) {
