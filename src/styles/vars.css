@@ -12,6 +12,8 @@
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   --font-heading: 'Areno', var(--font-base);
   --font-title: 'Areno Rough', var(--font-base);
+  --font-monospace: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo,
+    Courier, monospace;
 
   /* Stacking */
   --zi-nav: 1;

@@ -1,43 +1,68 @@
 import React from 'react';
+import {
+  FiCalendar,
+  FiCreditCard,
+  FiGift,
+  FiHeart,
+  FiScissors,
+  FiStar,
+} from 'react-icons/fi';
 
 import styles from './Adhesion.module.css';
 import Heading from './Heading';
 
 function Adhesion() {
   return (
-    <section id="adhesion">
-      <Heading>Adhésion</Heading>
-      <ul>
-        <li>
-          <h3>De 6 à 15 ans</h3>
-          <p>100 € / an</p>
-          <p>Uniforme inclus !</p>
-        </li>
-        <li>
-          <h3>À partir de 16 ans</h3>
-          <p>150 € / an</p>
-          <p>Uniforme inclus !</p>
-        </li>
-        <li>
-          <p>3 séances d’essai grauites</p>
-          <p>Réduction de 25 à 35 € pour les Fontainois éligibles</p>
-          <p>Pass’sport Isère accepté</p>
-          <p>Paiement en 2 ou 3 fois possible</p>
-        </li>
-      </ul>
-      <p>
-        Les inscriptions sont ouvertes toute l’année. N’hésitez pas à venir nous
-        rencontrer lors de nos séances d’entraînements ! Nous sommes également
-        présents chaque année au Forum des Sports de Fontaine, en septembre.
-      </p>
-      <p>
-        L’assurance du club couvre tous les membres à jour de leur cotisation.
-        Notre instructrice est bénévole ; les cotisations servent au paiement
-        des frais de fonctionnement de l’association, à l’achat de matériel
-        d’entraînement, et à l’organisation ou à la participation à des
-        événements sportifs (compétition, stage, etc.) et non sportifs (fête,
-        barbecue, etc.)
-      </p>
+    <section id="adhesion" className={styles.root}>
+      <div className={styles.inner}>
+        <div className={styles.headingWrapper}>
+          <Heading>Adhésion</Heading>
+        </div>
+        <div className={styles.content}>
+          <div className={styles.fees}>
+            <p>
+              <span className={styles.age}>de 6 à 15 ans</span>{' '}
+              <span className={styles.price}>
+                100 € <span>/ an</span>
+              </span>
+            </p>
+            <p>
+              <span className={styles.age}>à partir de 16 ans</span>{' '}
+              <span className={styles.price}>
+                150 € <span>/ an</span>
+              </span>
+            </p>
+          </div>
+          <ul className={styles.list}>
+            <li className={styles.highlight}>
+              <FiStar className={styles.icon} /> Uniforme inclus !
+            </li>
+            <li className={styles.highlight}>
+              <FiStar className={styles.icon} /> Trois séances d’essai gratuites
+            </li>
+            <li>
+              <FiCalendar className={styles.icon} /> Inscriptions ouvertes tout
+              l’année
+            </li>
+            <li>
+              <FiHeart className={styles.icon} /> Aide de 25 à 35 € aux
+              Fontainois éligibles
+            </li>
+            <li>
+              <FiCreditCard className={styles.icon} /> Pass’sports Isère
+              acceptés
+            </li>
+            <li>
+              <FiScissors className={styles.icon} /> Paiement en deux ou trois
+              fois possible
+            </li>
+            <li>
+              <FiGift className={styles.icon} /> Instructrice bénévole formée
+              aux premiers secours
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
   );
 }

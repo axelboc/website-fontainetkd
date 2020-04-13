@@ -14,9 +14,12 @@ const MAP_URL = buildMapUrl(ADDRESSES, ...MAP_DIMENSIONS);
 
 function Horaires() {
   return (
-    <section id="horaires" className={styles.root}>
+    <section className={styles.root}>
+      <div id="horaires" className={styles.anchor} />
       <div className={styles.inner}>
-        <Heading>Horaires</Heading>
+        <div className={styles.headingWrapper}>
+          <Heading>Horaires</Heading>
+        </div>
         <div className={styles.content}>
           <div className={styles.map}>
             <img
@@ -26,25 +29,59 @@ function Horaires() {
               height={MAP_DIMENSIONS[1]}
             />
           </div>
-          <div className={styles.times}>
+          <div className={styles.entries}>
             <article className={styles.entry}>
-              <h3>Mardi - Gymnase Robert Vial</h3>
-              <ul>
-                <li>18h - 19h : Section enfants</li>
-                <li>19h15 - 21h : Section ados &amp; adultes</li>
+              <h3 className={styles.entryHeading}>
+                <span className={styles.mapRef}>A</span>
+                Mardi – Gymnase Robert Vial{' '}
+              </h3>
+              <ul className={styles.list}>
+                <li>
+                  <span className={styles.time}>
+                    18:00<span>–</span>19:00
+                  </span>{' '}
+                  Section enfants
+                </li>
+                <li>
+                  <span className={styles.time}>
+                    19:15<span>–</span>21:00
+                  </span>{' '}
+                  Section ados/adultes
+                </li>
               </ul>
             </article>
             <article className={styles.entry}>
-              <h3>Mercredi - Parc Karl Marx</h3>
-              <ul>
-                <li>19h30 - 21h : Section ados &amps; adults</li>
-                <li>21h - 22h : Entraînement libre</li>
+              <h3 className={styles.entryHeading}>
+                <span className={styles.mapRef}>B</span>
+                Mercredi – Parc Karl Marx{' '}
+              </h3>
+              <ul className={styles.list}>
+                <li>
+                  <span className={styles.time}>
+                    19:30<span>–</span>21:00
+                  </span>{' '}
+                  Section ados/adultes
+                </li>
+                <li>
+                  <span className={styles.time}>
+                    21:00<span>–</span>22:00
+                  </span>{' '}
+                  Entraînement libre
+                </li>
               </ul>
             </article>
             <article className={styles.entry}>
-              <h3>Vendredi - Parc Karl Marx</h3>
-              <ul>
-                <li>20h30 - 22h : Section ados &amps; adults</li>
+              <h3 className={styles.entryHeading}>
+                <span className={styles.mapRef}>B</span>
+                Vendredi – Parc Karl Marx{' '}
+              </h3>
+              <ul className={styles.list}>
+                <li>
+                  <span className={styles.time}>
+                    20:30<span>–</span>22:00
+                  </span>{' '}
+                  Section ados/adultes
+                </li>
               </ul>
             </article>
           </div>

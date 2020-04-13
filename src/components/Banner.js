@@ -5,7 +5,7 @@ import styles from './Banner.module.css';
 
 function Banner() {
   return (
-    <header className={styles.header}>
+    <header id="top" className={styles.header}>
       <div className={styles.inner}>
         <Logo className={styles.logo} width="150" height="150" />
         <div className={styles.content}>

@@ -76,6 +76,7 @@
 @media (width >= 80em) {
   .header {
     position: relative;
+    overflow: hidden;
   }
 
   .header::before,
@@ -86,17 +87,20 @@
     z-index: calc(var(--zi-nav) + 1);
     width: 12rem;
     background-color: var(--candlelight);
+    transform: skew(12deg);
     content: '';
   }
 
   .header::before {
     left: 0;
-    clip-path: polygon(0 0, 40% 0, 100% 100%, 0 100%);
+    transform-origin: bottom;
+    /* clip-path: polygon(0 0, 40% 0, 100% 100%, 0 100%); */
   }
 
   .header::after {
     right: 0;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%);
+    transform-origin: top;
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%); */
   }
 
   .logo {

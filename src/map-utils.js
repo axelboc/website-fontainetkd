@@ -37,7 +37,7 @@ export function buildMapUrl(addresses, width, height) {
   const markers = (addresses.length > 1
     ? addresses.map(getLabelledAddress)
     : addresses
-  ).map(marker => `size:mid|color:0xb6040a|${marker}`);
+  ).map(marker => `size:mid|color:0xfdd914|${marker}`);
 
   const queryString = getMapParams(width, height, markers)
     .map(([key, value]) => `${key}=${encodeURIComponent(value)}`)

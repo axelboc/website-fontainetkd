@@ -1,0 +1,109 @@
+.root {
+  background-color: var(--lochmara);
+  padding: 3rem 4rem 6rem;
+}
+
+.inner {
+  position: relative;
+  overflow: hidden;
+  margin-left: auto;
+  background-color: var(--minsk);
+}
+
+.inner::before {
+  --width: 8rem; /* MAGIC NUMBER based on element height and skew angle */
+  position: absolute;
+  top: 0;
+  bottom: -1px; /* glitch */
+  left: calc(-1 * var(--width));
+  background-color: var(--minsk);
+  border-left: var(--width) solid var(--lochmara);
+  width: calc(6rem + var(--width));
+  transform: skew(10deg);
+  transform-origin: top;
+  content: '';
+}
+
+.headingWrapper {
+  padding: 1.5rem 0 0 6rem;
+  margin-left: -1.125rem;
+}
+
+.content {
+  display: flex;
+  padding: 0.5rem 2rem 2rem 3rem;
+}
+
+.fees {
+  flex: 1 1 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 0 1.25rem;
+  text-align: right;
+  list-style: none;
+}
+
+.fees > p {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+  padding: 1.5rem 1.5rem 1rem;
+  background-color: black;
+}
+
+.fees > p:last-child {
+  margin-bottom: 0.25rem;
+}
+
+.age {
+  composes: heading from global;
+  color: var(--candlelight);
+  font-size: 180%;
+}
+
+.price {
+  font-family: var(--font-monospace);
+  font-size: 300%;
+  font-weight: bold;
+  line-height: 1.1;
+  color: white;
+}
+
+.price > span {
+  font-size: 60%;
+  font-weight: 400;
+  vertical-align: 0.25rem;
+  font-family: var(--font-base);
+}
+
+.list {
+  flex: 1 1 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 0;
+  padding: 1rem 1rem 1rem 3rem;
+  background-color: white;
+  list-style: none;
+}
+
+.list > li {
+  margin-bottom: 0.5rem;
+}
+
+.icon {
+  margin-right: 0.5rem;
+  vertical-align: -0.1875rem;
+  stroke: var(--lochmara);
+}
+
+.highlight {
+  font-size: 120%;
+  font-weight: 600;
+}
+
+.highlight:nth-child(2) {
+  margin-bottom: 1.5rem;
+}
