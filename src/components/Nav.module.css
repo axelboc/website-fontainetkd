@@ -40,7 +40,7 @@
   }
 }
 
-.falconLink {
+.topLink {
   composes: link;
 }
 
@@ -73,7 +73,7 @@
 }
 
 @media (width < 60em) {
-  .falconLink {
+  .topLink {
     display: none;
   }
 }
@@ -83,7 +83,7 @@
     padding-left: 2.5rem;
   }
 
-  .falconLink {
+  .topLink {
     margin-left: 1rem;
   }
 }

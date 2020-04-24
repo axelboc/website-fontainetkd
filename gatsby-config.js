@@ -25,12 +25,6 @@ module.exports = {
     },
     'gatsby-plugin-react-svg',
     'gatsby-plugin-react-helmet',
-    {
-      resolve: 'gatsby-plugin-anchor-links',
-      options: {
-        offset: -48, // 3rem
-      },
-    },
     'gatsby-plugin-nprogress',
     'gatsby-plugin-sitemap',
   ],
