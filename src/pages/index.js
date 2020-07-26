@@ -6,14 +6,14 @@ import Adhesion from '../components/Adhesion';
 import Banner from '../components/Banner';
 import Footer from '../components/Footer';
 import Horaires from '../components/Horaires';
+import Meta from '../components/Meta';
 import Nav from '../components/Nav';
 import Sections from '../components/Sections';
-import SEO from '../components/SEO';
 
 function IndexPage() {
   return (
     <>
-      <SEO />
+      <Meta />
       <Banner />
       <Nav />
       <main>

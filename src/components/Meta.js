@@ -9,13 +9,15 @@ const DESCRIPTION =
   'Rejoignez-nous toute l’année à Fontaine, près de Grenoble, pour découvrir le ' +
   'Taekwon‑Do ITF, un art martial coréen moderne conçu pour l’auto-défense.';
 
-function SEO() {
+function Meta() {
   return (
     <Helmet>
       <html lang="fr" />
       <title>
         {TITLE} · {SUBTITLE}
       </title>
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
       <meta name="description" content={DESCRIPTION} />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content={TITLE}></meta>
@@ -31,4 +33,4 @@ function SEO() {
   );
 }
 
-export default SEO;
+export default Meta;
