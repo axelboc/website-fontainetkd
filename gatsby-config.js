@@ -4,6 +4,9 @@ const postcssBrowserReporter = require('postcss-browser-reporter');
 const postcssReporter = require('postcss-reporter');
 
 module.exports = {
+  siteMetadata: {
+    siteUrl: 'https://fontainetkd.com',
+  },
   plugins: [
     {
       resolve: 'gatsby-plugin-postcss',
@@ -26,6 +29,6 @@ module.exports = {
     'gatsby-plugin-react-svg',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-nprogress',
-    'gatsby-plugin-sitemap',
+    // 'gatsby-plugin-sitemap',
   ],
 };
