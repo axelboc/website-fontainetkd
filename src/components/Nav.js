@@ -1,19 +1,23 @@
-import { Link } from 'gatsby';
 import React, { useEffect } from 'react';
-import SmoothScroll from 'smooth-scroll';
 
 import Falcon from '../assets/falcon.svg';
 import styles from './Nav.module.css';
 
+let scroll;
+
 function Nav() {
   useEffect(() => {
-    const scroll = new SmoothScroll('[href*="#"]', {
-      offset: 48,
-      updateURL: false,
+    import('smooth-scroll').then(({ default: SmoothScroll }) => {
+      scroll = new SmoothScroll('[href*="#"]', {
+        offset: 48,
+        updateURL: false,
+      });
     });
 
     return () => {
-      scroll.destroy();
+      if (scroll) {
+        scroll.destroy();
+      }
     };
   }, []);
 
