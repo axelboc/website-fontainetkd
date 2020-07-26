@@ -1,4 +1,5 @@
 import React from 'react';
+import { FiExternalLink } from 'react-icons/fi';
 
 import { buildMapUrl } from '../map-utils';
 import Heading from './Heading';
@@ -33,7 +34,16 @@ function Horaires() {
             <article className={styles.entry}>
               <h3 className={styles.entryHeading}>
                 <span className={styles.mapRef}>A</span>
-                Mardi – Gymnase Robert Vial{' '}
+                Mardi –{' '}
+                <a
+                  className={styles.mapLink}
+                  href="https://goo.gl/maps/SXapWD8XvWmMDSCNA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Gymnase Robert Vial
+                  <FiExternalLink className={styles.externalIcon} />
+                </a>
               </h3>
               <ul className={styles.list}>
                 <li>
@@ -53,7 +63,16 @@ function Horaires() {
             <article className={styles.entry}>
               <h3 className={styles.entryHeading}>
                 <span className={styles.mapRef}>B</span>
-                Mercredi – Parc Karl Marx{' '}
+                Mercredi –{' '}
+                <a
+                  className={styles.mapLink}
+                  href="https://g.page/FontaineTKD?share"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Parc Karl Marx
+                  <FiExternalLink className={styles.externalIcon} />
+                </a>
               </h3>
               <ul className={styles.list}>
                 <li>
@@ -73,7 +92,16 @@ function Horaires() {
             <article className={styles.entry}>
               <h3 className={styles.entryHeading}>
                 <span className={styles.mapRef}>B</span>
-                Vendredi – Parc Karl Marx{' '}
+                Vendredi –{' '}
+                <a
+                  className={styles.mapLink}
+                  href="https://g.page/FontaineTKD?share"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Parc Karl Marx
+                  <FiExternalLink className={styles.externalIcon} />
+                </a>
               </h3>
               <ul className={styles.list}>
                 <li>

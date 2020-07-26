@@ -51,6 +51,16 @@
   font-weight: inherit;
 }
 
+.mapLink {
+  composes: link-reset from global;
+  display: inline-flex;
+  align-items: center;
+}
+
+.externalIcon {
+  margin-left: 0.5rem;
+}
+
 .list {
   list-style: none;
   margin-bottom: 0.25rem;
