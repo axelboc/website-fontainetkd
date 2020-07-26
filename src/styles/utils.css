@@ -52,3 +52,33 @@
   letter-spacing: 0.0375em;
   text-transform: uppercase;
 }
+
+@media (width >= 80em) {
+  .slant {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slant::before {
+    position: absolute;
+    top: 0;
+    bottom: -1px; /* glitch */
+    background-color: var(--minsk);
+    width: calc(6rem + var(--slant-width));
+    transform: skew(var(--skew-angle));
+    content: '';
+  }
+
+  .slantLeft::before {
+    --skew-angle: 10deg;
+    left: calc(-1 * var(--slant-width));
+    border-left: var(--slant-width) solid var(--lochmara);
+    transform-origin: top;
+  }
+
+  .slantRight::before {
+    right: calc(-1 * var(--slant-width));
+    border-right: var(--slant-width) solid var(--lochmara);
+    transform-origin: bottom;
+  }
+}

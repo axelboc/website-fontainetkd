@@ -48,7 +48,7 @@
   }
 }
 
-@media (width >= 50em) {
+@media (width >= 52em) {
   .inner {
     display: flex;
     justify-content: center;
@@ -87,7 +87,7 @@
     z-index: calc(var(--zi-nav) + 1);
     width: 12rem;
     background-color: var(--candlelight);
-    transform: skew(12deg);
+    transform: skew(var(--skew-angle));
     content: '';
   }
 

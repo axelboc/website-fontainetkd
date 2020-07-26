@@ -7,6 +7,8 @@ import {
   FiSmile,
 } from 'react-icons/fi';
 
+import photo1 from '../assets/photo1.jpg';
+import photo2 from '../assets/photo2.jpg';
 import Heading from './Heading';
 import styles from './Sections.module.css';
 
@@ -39,12 +41,7 @@ function Sections() {
             </li>
           </ul>
           <div className={styles.imgWrap}>
-            <img
-              className={styles.img}
-              src="https://picsum.photos/seed/1/800/300"
-              width="800"
-              height="300"
-            />
+            <img className={styles.img} src={photo1} width="800" height="300" />
           </div>
         </div>
       </article>
@@ -76,12 +73,7 @@ function Sections() {
             </li>
           </ul>
           <div className={styles.imgWrap}>
-            <img
-              className={styles.img}
-              src="https://picsum.photos/seed/2/800/300"
-              width="800"
-              height="300"
-            />
+            <img className={styles.img} src={photo2} width="800" height="300" />
           </div>
         </div>
       </article>

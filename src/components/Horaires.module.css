@@ -1,6 +1,6 @@
 .root {
   background-color: var(--lochmara);
-  padding: 3rem 4rem 3rem;
+  padding: 1rem 1.5rem 3rem;
 }
 
 .anchor {
@@ -8,31 +8,13 @@
 }
 
 .inner {
-  position: relative;
-  overflow: hidden;
+  composes: slant slantRight from global;
   background-color: var(--minsk);
-}
-
-.inner::after {
-  --width: 8rem; /* MAGIC NUMBER based on element height and skew angle */
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: calc(-1 * var(--width));
-  background-color: var(--minsk);
-  border-right: var(--width) solid var(--lochmara);
-  width: calc(6rem + var(--width));
-  transform: skew(12deg);
-  transform-origin: bottom;
-  content: '';
-}
-
-.headingWrapper {
-  padding: 0.5em 0 0.75rem;
 }
 
 .map {
   position: relative;
+  margin-bottom: 1rem;
 }
 
 .mapImg {
@@ -49,10 +31,6 @@
   margin-bottom: 1rem;
   padding: 1.5rem;
   background-color: #fff;
-}
-
-.entry:last-child {
-  margin-bottom: 0.25rem;
 }
 
 .entryHeading {
@@ -90,12 +68,35 @@
   padding: 0 0.25em;
 }
 
-@media (width >= 80em) {
+@media (width >= 55em) {
   .content {
     display: flex;
   }
 
+  .map {
+    max-width: 50%;
+  }
+
   .entries {
     flex: 1 1 0%;
+  }
+}
+@media (width >= 65em) {
+  .map {
+    margin-bottom: 0;
+  }
+}
+
+@media (width >= 80em) {
+  .root {
+    padding: 3rem 4rem;
+  }
+
+  .headingWrapper {
+    padding: 0.5em 0 0.75rem;
+  }
+
+  .entry:last-child {
+    margin-bottom: 0.25rem;
   }
 }

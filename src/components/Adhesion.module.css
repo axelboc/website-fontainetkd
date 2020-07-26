@@ -1,37 +1,12 @@
 .root {
   background-color: var(--lochmara);
-  padding: 3rem 4rem 6rem;
+  padding: 1rem 1.5rem 4rem;
 }
 
 .inner {
-  position: relative;
-  overflow: hidden;
-  margin-left: auto;
+  composes: slant slantLeft from global;
+  padding-bottom: 1rem;
   background-color: var(--minsk);
-}
-
-.inner::before {
-  --width: 8rem; /* MAGIC NUMBER based on element height and skew angle */
-  position: absolute;
-  top: 0;
-  bottom: -1px; /* glitch */
-  left: calc(-1 * var(--width));
-  background-color: var(--minsk);
-  border-left: var(--width) solid var(--lochmara);
-  width: calc(6rem + var(--width));
-  transform: skew(10deg);
-  transform-origin: top;
-  content: '';
-}
-
-.headingWrapper {
-  padding: 1.5rem 0 0 6rem;
-  margin-left: -1.125rem;
-}
-
-.content {
-  display: flex;
-  padding: 0.5rem 2rem 2rem 3rem;
 }
 
 .fees {
@@ -39,22 +14,16 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1rem 0 1.25rem;
-  text-align: right;
+  padding-top: 0.25rem;
   list-style: none;
 }
 
 .fees > p {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   margin-bottom: 1rem;
-  padding: 1.5rem 1.5rem 1rem;
+  padding: 1.5rem 1.5rem 1rem 2rem;
   background-color: black;
-}
-
-.fees > p:last-child {
-  margin-bottom: 0.25rem;
 }
 
 .age {
@@ -106,4 +75,52 @@
 
 .highlight:nth-child(2) {
   margin-bottom: 1.5rem;
+}
+
+@media (43em <= width < 60em) {
+  .fees > p {
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 0.75rem 2rem 1rem;
+  }
+
+  .age,
+  .price {
+    flex: 1 1 0%;
+  }
+
+  .price {
+    text-align: right;
+  }
+}
+
+@media (width >= 60em) {
+  .content {
+    display: flex;
+    padding: 0.5rem 2rem 2rem 3rem;
+  }
+
+  .fees {
+    padding: 1rem 0 1.25rem;
+  }
+
+  .fees > p {
+    align-items: flex-end;
+    padding-left: 1.5rem;
+  }
+
+  .fees > p:last-child {
+    margin-bottom: 0.25rem;
+  }
+}
+
+@media (width >= 80em) {
+  .root {
+    padding: 3rem 4rem 6rem;
+  }
+
+  .headingWrapper {
+    padding: 1.5rem 0 0 6rem;
+    margin-left: -1.125rem;
+  }
 }
