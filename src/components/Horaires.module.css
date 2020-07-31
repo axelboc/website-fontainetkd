@@ -7,6 +7,28 @@
   margin-bottom: 3rem;
 }
 
+.announcement {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0 -1rem;
+  padding: 1rem;
+  background-color: var(--minsk);
+  color: white;
+}
+
+.announcementIcon {
+  font-size: 4rem;
+  margin-right: 1.5rem;
+}
+
+.announcement p {
+  margin: 0;
+}
+
+.announcement a {
+  color: inherit;
+}
+
 .inner {
   composes: slant slantRight from global;
   background-color: var(--minsk);
@@ -100,6 +122,10 @@
 @media (width >= 80em) {
   .root {
     padding: 3rem 4rem;
+  }
+
+  .announcement {
+    margin: 0;
   }
 
   .headingWrapper {
