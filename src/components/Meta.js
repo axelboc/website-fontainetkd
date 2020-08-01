@@ -16,8 +16,18 @@ function Meta() {
       <title>
         {TITLE} · {SUBTITLE}
       </title>
-      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/favicon-32x32.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/favicon-16x16.png"
+      />
       <meta name="description" content={DESCRIPTION} />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content={TITLE}></meta>
@@ -26,7 +36,7 @@ function Meta() {
       <meta property="og:image" content={logo} />
       <meta property="og:image:width" content="856" />
       <meta property="og:image:height" content="856" />
-      <meta property="og:url" content="https://fontainetkd.com" />
+      <meta property="og:url" content="https://fontainetkd.fr" />
       <meta property="og:locale" content="fr_FR" />
       <meta name="twitter:card" content="summary_large_image" />
     </Helmet>
