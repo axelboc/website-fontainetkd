@@ -5,6 +5,8 @@ import { buildMapUrl } from '../map-utils';
 import Heading from './Heading';
 import styles from './Horaires.module.css';
 
+const SHOW_ANNOUNCEMENT = false;
+
 const ADDRESSES = [
   'Gymnase Robert Vial, Allée de Geve, 38600 Fontaine, France',
   'Parc Karl Marx, 38170 Seyssinet-Pariset, France',
@@ -17,17 +19,19 @@ function Horaires() {
   return (
     <section className={styles.root}>
       <div id="horaires" className={styles.anchor}>
-        <div className={styles.announcement}>
-          <FiInfo className={styles.announcementIcon} />
-          <p>
-            Les horaires et lieux d’entraînement pour la saison 2020/2021 ne
-            sont pas encore confirmés. Pour rester informé·e, abonnez‑vous à{' '}
-            <a href="https://www.facebook.com/FontaineTKD/">
-              notre page Facebook
-            </a>
-            .
-          </p>
-        </div>
+        {SHOW_ANNOUNCEMENT && (
+          <div className={styles.announcement}>
+            <FiInfo className={styles.announcementIcon} />
+            <p>
+              Les horaires et lieux d’entraînement pour la saison 2020/2021 ne
+              sont pas encore confirmés. Pour rester informé·e, abonnez‑vous à{' '}
+              <a href="https://www.facebook.com/FontaineTKD/">
+                notre page Facebook
+              </a>
+              .
+            </p>
+          </div>
+        )}
       </div>
       <div className={styles.inner}>
         <div className={styles.headingWrapper}>
