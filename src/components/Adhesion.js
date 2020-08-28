@@ -41,16 +41,15 @@ function Adhesion() {
               <FiStar className={styles.icon} /> Trois séances d’essai gratuites
             </li>
             <li>
-              <FiCalendar className={styles.icon} /> Inscriptions ouvertes tout
+              <FiCalendar className={styles.icon} /> Inscriptions ouvertes toute
               l’année
             </li>
             <li>
-              <FiHeart className={styles.icon} /> Aide de 25 à 35 € aux
+              <FiHeart className={styles.icon} /> Aide de 20 à 35 € aux
               Fontainois éligibles
             </li>
             <li>
-              <FiCreditCard className={styles.icon} /> Pass’sports Isère
-              acceptés
+              <FiCreditCard className={styles.icon} /> Pass’sport Isère accepté
             </li>
             <li>
               <FiScissors className={styles.icon} /> Paiement en deux ou trois

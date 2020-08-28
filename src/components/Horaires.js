@@ -70,7 +70,7 @@ function Horaires() {
                 </li>
                 <li>
                   <span className={styles.time}>
-                    19:15<span>–</span>21:00
+                    19:30<span>–</span>21:00
                   </span>{' '}
                   Section ados/adultes
                 </li>
