@@ -4,14 +4,7 @@ const postcssBrowserReporter = require('postcss-browser-reporter');
 const postcssReporter = require('postcss-reporter');
 
 module.exports = {
-  siteMetadata: {
-    siteUrl: 'https://fontainetkd.fr',
-    title: 'Fontaine Taekwon-Do',
-    subtitle: 'Club ITF près de Grenoble',
-    description:
-      'Rejoignez-nous toute l’année à Fontaine, près de Grenoble, pour découvrir le ' +
-      'Taekwon‑Do ITF, un art martial coréen moderne conçu pour l’auto-défense.',
-  },
+  siteMetadata: {},
   plugins: [
     {
       resolve: 'gatsby-plugin-postcss',
