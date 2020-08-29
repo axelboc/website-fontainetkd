@@ -4,7 +4,9 @@ const postcssBrowserReporter = require('postcss-browser-reporter');
 const postcssReporter = require('postcss-reporter');
 
 module.exports = {
-  siteMetadata: {},
+  siteMetadata: {
+    siteUrl: 'https://fontainetkd.fr',
+  },
   plugins: [
     {
       resolve: 'gatsby-plugin-postcss',
