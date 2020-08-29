@@ -38,7 +38,12 @@ function Nav() {
         <a className={styles.link} href="#adhesion">
           <span className={styles.item}>Adhésion</span>
         </a>
-        <a className={styles.link} href="">
+        <a
+          className={styles.link}
+          href="https://fontainetkd.typeform.com/to/YlcrgiPQ"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <span className={styles.item}>Contact</span>
         </a>
       </nav>
