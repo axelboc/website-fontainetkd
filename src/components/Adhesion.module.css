@@ -1,12 +1,14 @@
 .root {
-  background-color: var(--lochmara);
-  padding: 1rem 1.5rem 4rem;
+  composes: separator from global;
+  background-color: var(--minsk);
 }
 
 .inner {
-  composes: slant slantLeft from global;
-  padding-bottom: 1rem;
-  background-color: var(--minsk);
+  padding: 1rem 0 2rem;
+}
+
+.content {
+  padding-top: 0.75rem;
 }
 
 .fees {
@@ -14,7 +16,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 0.25rem;
   list-style: none;
 }
 
@@ -52,7 +53,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
   padding: 1rem 1rem 1rem 3rem;
   background-color: white;
   list-style: none;
@@ -97,11 +98,10 @@
 @media (width >= 60em) {
   .content {
     display: flex;
-    padding: 0.5rem 2rem 2rem 3rem;
   }
 
   .fees {
-    padding: 1rem 0 1.25rem;
+    padding: 1rem 0;
   }
 
   .fees > p {
@@ -112,15 +112,20 @@
   .fees > p:last-child {
     margin-bottom: 0.25rem;
   }
+
+  .list {
+    margin-bottom: 0;
+  }
 }
 
-@media (width >= 80em) {
-  .root {
-    padding: 3rem 4rem 6rem;
+@media (width >= 65em) {
+  .inner {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 2rem 0 4rem;
   }
 
-  .headingWrapper {
-    padding: 1.5rem 0 0 6rem;
-    margin-left: -1.125rem;
+  .content {
+    padding: 2rem 2rem 0;
   }
 }

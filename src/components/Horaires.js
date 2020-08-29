@@ -1,11 +1,9 @@
 import React from 'react';
-import { FiExternalLink, FiInfo } from 'react-icons/fi';
+import { FiExternalLink } from 'react-icons/fi';
 
 import { buildMapUrl } from '../map-utils';
 import Heading from './Heading';
 import styles from './Horaires.module.css';
-
-const SHOW_ANNOUNCEMENT = false;
 
 const ADDRESSES = [
   'Gymnase Robert Vial, Allée de Geve, 38600 Fontaine, France',
@@ -18,25 +16,8 @@ const MAP_URL = buildMapUrl(ADDRESSES, ...MAP_DIMENSIONS);
 function Horaires() {
   return (
     <section className={styles.root}>
-      <div id="horaires" className={styles.anchor}>
-        {SHOW_ANNOUNCEMENT && (
-          <div className={styles.announcement}>
-            <FiInfo className={styles.announcementIcon} />
-            <p>
-              Les horaires et lieux d’entraînement pour la saison 2020/2021 ne
-              sont pas encore confirmés. Pour rester informé·e, abonnez‑vous à{' '}
-              <a href="https://www.facebook.com/FontaineTKD/">
-                notre page Facebook
-              </a>
-              .
-            </p>
-          </div>
-        )}
-      </div>
-      <div className={styles.inner}>
-        <div className={styles.headingWrapper}>
-          <Heading>Horaires</Heading>
-        </div>
+      <div id="horaires" className={styles.inner}>
+        <Heading>Horaires</Heading>
         <div className={styles.content}>
           <div className={styles.map}>
             <img

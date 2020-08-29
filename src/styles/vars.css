@@ -19,7 +19,6 @@
   --zi-nav: 1;
 
   /* Misc */
-  --slant-width: 8rem; /* MAGIC NUMBER- adjust based on element height and skew angle */
   --skew-angle: 12deg;
 }
 

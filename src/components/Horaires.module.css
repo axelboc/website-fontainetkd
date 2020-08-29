@@ -1,42 +1,20 @@
 .root {
-  background-color: var(--lochmara);
-  padding: 1rem 1.5rem 3rem;
-}
-
-.anchor {
-  margin-bottom: 3rem;
-}
-
-.announcement {
-  display: flex;
-  align-items: center;
-  margin: 1rem 0 -1rem;
-  padding: 1rem;
+  composes: separator from global;
   background-color: var(--minsk);
-  color: white;
-}
-
-.announcementIcon {
-  font-size: 4rem;
-  margin-right: 1.5rem;
-}
-
-.announcement p {
-  margin: 0;
-}
-
-.announcement a {
-  color: inherit;
 }
 
 .inner {
-  composes: slant slantRight from global;
-  background-color: var(--minsk);
+  padding: 1rem 0 2rem;
+}
+
+.content {
+  padding-top: 0.75rem;
 }
 
 .map {
   position: relative;
   margin-bottom: 1rem;
+  background-color: var(--lochmara);
 }
 
 .mapImg {
@@ -100,36 +78,40 @@
   padding: 0 0.25em;
 }
 
-@media (width >= 55em) {
+@media (width >= 32em) {
+  .map {
+    padding: 0 2rem;
+  }
+}
+
+@media (width >= 56em) {
   .content {
     display: flex;
   }
 
   .map {
     max-width: 50%;
+    padding: 0;
   }
 
   .entries {
     flex: 1 1 0%;
   }
 }
+
 @media (width >= 65em) {
+  .inner {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 2rem 0 4rem;
+  }
+
+  .content {
+    padding: 1.5rem 2rem 0;
+  }
+
   .map {
     margin-bottom: 0;
-  }
-}
-
-@media (width >= 80em) {
-  .root {
-    padding: 3rem 4rem;
-  }
-
-  .announcement {
-    margin: 0;
-  }
-
-  .headingWrapper {
-    padding: 0.5em 0 0.75rem;
   }
 
   .entry:last-child {

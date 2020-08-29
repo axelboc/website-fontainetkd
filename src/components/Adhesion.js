@@ -13,11 +13,9 @@ import Heading from './Heading';
 
 function Adhesion() {
   return (
-    <section id="adhesion" className={styles.root}>
-      <div className={styles.inner}>
-        <div className={styles.headingWrapper}>
-          <Heading>Adhésion</Heading>
-        </div>
+    <section className={styles.root}>
+      <div id="adhesion" className={styles.inner}>
+        <Heading>Adhésion</Heading>
         <div className={styles.content}>
           <div className={styles.fees}>
             <p>
