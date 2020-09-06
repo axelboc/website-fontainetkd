@@ -58,7 +58,7 @@ function Sections() {
             </li>
             <li>
               <FiCalendar className={styles.icon} /> Trois séances
-              d’entrainement par&nbsp;semaine
+              d’entraînement par&nbsp;semaine
             </li>
             <li>
               <FiCheckCircle className={styles.icon} /> Pratique complète :
