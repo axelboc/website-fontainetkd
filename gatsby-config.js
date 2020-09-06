@@ -1,3 +1,5 @@
+const path = require('path');
+
 const postcssImport = require('postcss-import');
 const postcssPresetEnv = require('postcss-preset-env');
 const postcssBrowserReporter = require('postcss-browser-reporter');
@@ -26,6 +28,15 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'assets',
+        path: path.join(__dirname, 'src', 'assets'),
+      },
+    },
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     'gatsby-plugin-react-svg',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-nprogress',
