@@ -26,7 +26,7 @@ function Sections(props) {
             </li>
             <li>
               <FiCalendar className={styles.icon} /> Une scéance d’entraînement
-              de 45r&nbsp;min par&nbsp;semaine
+              de 45&nbsp;min par&nbsp;semaine
             </li>
             <li>
               <FiCheckCircle className={styles.icon} /> Développe la
