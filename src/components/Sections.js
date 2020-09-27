@@ -25,8 +25,8 @@ function Sections(props) {
               Taekwon‑Do
             </li>
             <li>
-              <FiCalendar className={styles.icon} /> Le mardi de 18h à 19h au
-              gymnase Robert&nbsp;Vial
+              <FiCalendar className={styles.icon} /> Une scéance d’entraînement
+              de 45r&nbsp;min par&nbsp;semaine
             </li>
             <li>
               <FiCheckCircle className={styles.icon} /> Développe la
@@ -95,8 +95,8 @@ function Sections(props) {
               repousser ses&nbsp;limites
             </li>
             <li>
-              <FiCalendar className={styles.icon} /> Deux séances
-              par&nbsp;semaine, les lundis et jeudis&nbsp;matins
+              <FiCalendar className={styles.icon} /> Deux séances d’entraînement
+              par&nbsp;semaine, en matinée
             </li>
             <li>
               <FiCheckCircle className={styles.icon} /> Utilisation des

@@ -1,17 +1,9 @@
-import React from 'react';
-import { FiExternalLink } from 'react-icons/fi';
+import React, { Fragment } from 'react';
+import { FiExternalLink, FiInfo } from 'react-icons/fi';
 
-import { buildMapUrl } from '../map-utils';
+import { Times } from '../data';
 import Heading from './Heading';
 import styles from './Horaires.module.css';
-
-const ADDRESSES = [
-  'Gymnase Robert Vial, Allée de Geve, 38600 Fontaine, France',
-  'Parc Karl Marx, 38170 Seyssinet-Pariset, France',
-];
-
-const MAP_DIMENSIONS = [500, 500];
-const MAP_URL = buildMapUrl(ADDRESSES, ...MAP_DIMENSIONS);
 
 function Horaires() {
   return (
@@ -19,96 +11,64 @@ function Horaires() {
       <div id="horaires" className={styles.inner}>
         <Heading>Horaires</Heading>
         <div className={styles.content}>
-          <div className={styles.map}>
-            <img
-              className={styles.mapImg}
-              srcSet={`${MAP_URL} 1x, ${MAP_URL}&scale=2 2x`}
-              width={MAP_DIMENSIONS[0]}
-              height={MAP_DIMENSIONS[1]}
-            />
-          </div>
-          <div className={styles.entries}>
-            <article className={styles.entry}>
-              <h3 className={styles.entryHeading}>
-                <span className={styles.mapRef}>A</span>
-                Mardi –{' '}
-                <a
-                  className={styles.mapLink}
-                  href="https://goo.gl/maps/SXapWD8XvWmMDSCNA"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Gymnase Robert Vial
-                  <FiExternalLink className={styles.externalIcon} />
-                </a>
+          {Object.entries(Times).map(([day, times], colIndex) => (
+            <Fragment key={day}>
+              <h3
+                className={styles.day}
+                style={{ gridColumn: colIndex + 1, gridRow: 1 }}
+              >
+                {day}
               </h3>
-              <ul className={styles.list}>
-                <li>
-                  <span className={styles.time}>
-                    18:00<span>–</span>19:00
-                  </span>{' '}
-                  Section enfants
-                </li>
-                <li>
-                  <span className={styles.time}>
-                    19:30<span>–</span>21:00
-                  </span>{' '}
-                  Section ados/adultes
-                </li>
-              </ul>
-            </article>
-            <article className={styles.entry}>
-              <h3 className={styles.entryHeading}>
-                <span className={styles.mapRef}>B</span>
-                Mercredi –{' '}
-                <a
-                  className={styles.mapLink}
-                  href="https://g.page/FontaineTKD?share"
-                  target="_blank"
-                  rel="noopener noreferrer"
+              {colIndex > 0 && (
+                <span
+                  className={styles.dayBorder}
+                  style={{ gridColumn: colIndex + 1, gridRow: '1 / span 13' }}
+                />
+              )}
+              {times.map(({ from, to, gridRow, section, location }) => (
+                <div
+                  key={`${from}-${to}`}
+                  className={styles.entry}
+                  style={{ gridColumn: colIndex + 1, gridRow }}
                 >
-                  Parc Karl Marx
-                  <FiExternalLink className={styles.externalIcon} />
-                </a>
-              </h3>
-              <ul className={styles.list}>
-                <li>
                   <span className={styles.time}>
-                    19:30<span>–</span>21:00
-                  </span>{' '}
-                  Section ados/adultes
-                </li>
-                <li>
-                  <span className={styles.time}>
-                    21:00<span>–</span>22:00
-                  </span>{' '}
-                  Entraînement libre
-                </li>
-              </ul>
-            </article>
-            <article className={styles.entry}>
-              <h3 className={styles.entryHeading}>
-                <span className={styles.mapRef}>B</span>
-                Vendredi –{' '}
-                <a
-                  className={styles.mapLink}
-                  href="https://g.page/FontaineTKD?share"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Parc Karl Marx
-                  <FiExternalLink className={styles.externalIcon} />
-                </a>
-              </h3>
-              <ul className={styles.list}>
-                <li>
-                  <span className={styles.time}>
-                    20:30<span>–</span>22:00
-                  </span>{' '}
-                  Section ados/adultes
-                </li>
-              </ul>
-            </article>
+                    {from}
+                    <span>–</span>
+                    {to}
+                  </span>
+                  <span className={styles.section}>{section}</span>
+                  <a
+                    className={styles.locationLink}
+                    href={location.gmapUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {location.name}
+                    <FiExternalLink className={styles.externalIcon} />
+                  </a>
+                </div>
+              ))}
+            </Fragment>
+          ))}
+          <span className={styles.midday} />
+
+          <div className={styles.announcement}>
+            <FiInfo className={styles.announcementIcon} />
+            <p>
+              En raison de la situation sanitaire, les entraînements se
+              déroulent actuellement en extérieur ou en visioconférence. Un
+              système de réservation a été mis en place afin de respecter la
+              limite de 10 personnes par créneau. Pour en savoir plus ou faire
+              une scéance d’essai,{' '}
+              <a
+                href="https://fontainetkd.typeform.com/to/YlcrgiPQ"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                contactez-nous
+              </a>
+              .
+            </p>
           </div>
         </div>
       </div>
