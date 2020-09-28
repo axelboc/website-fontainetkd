@@ -1,6 +1,6 @@
 export const Locations = {
   GymnaseRV: {
-    name: 'Gymnase Robert Vial',
+    name: 'Gymnase R. Vial',
     gmapUrl: 'https://goo.gl/maps/SXapWD8XvWmMDSCNA',
     address: 'Gymnase Robert Vial, Allée de Geve, 38600 Fontaine, France',
   },
@@ -28,32 +28,32 @@ export const Times = {
     {
       from: '18:00',
       to: '19:30',
-      gridRow: '9 / span 5',
+      gridRow: '8 / span 6',
       section: 'Ados / Adultes',
       location: Locations.ParcKM,
     },
   ],
   Mardi: [
     {
-      from: '17:45',
-      to: '18:30',
+      from: '18:00',
+      to: '18:45',
       gridRow: '8 / span 3',
       section: 'Enfants',
-      location: Locations.ParcKM,
+      location: Locations.GymnaseRV,
     },
     {
       from: '18:45',
       to: '19:30',
       gridRow: '11 / span 3',
       section: 'Enfants',
-      location: Locations.ParcKM,
+      location: Locations.GymnaseRV,
     },
   ],
   Mercredi: [
     {
       from: '18:00',
       to: '19:30',
-      gridRow: '9 / span 5',
+      gridRow: '8 / span 6',
       section: 'Ados / Adultes',
       location: Locations.ParcKM,
     },
@@ -71,7 +71,7 @@ export const Times = {
     {
       from: '18:00',
       to: '19:30',
-      gridRow: '9 / span 5',
+      gridRow: '8 / span 6',
       section: 'Ados / Adultes',
       location: Locations.ParcKM,
     },

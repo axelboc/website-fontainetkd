@@ -55,7 +55,7 @@ function Horaires() {
           <div className={styles.announcement}>
             <FiInfo className={styles.announcementIcon} />
             <p>
-              En raison de la situation sanitaire, les entraînements se
+              En raison de la situation sanitaire, les entraînements ados/adultes se
               déroulent actuellement en extérieur ou en visioconférence. Un
               système de réservation a été mis en place afin de respecter la
               limite de 10 personnes par créneau. Pour en savoir plus ou faire
