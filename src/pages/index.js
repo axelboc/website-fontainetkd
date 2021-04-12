@@ -16,6 +16,31 @@ function IndexPage(props) {
   return (
     <>
       <Meta />
+      <div
+        style={{
+          backgroundColor: 'var(--minsk)',
+          color: 'white',
+          padding: '1rem 2rem',
+        }}
+      >
+        <p
+          style={{
+            maxWidth: '40em',
+            margin: '0 auto 0.25rem',
+            textAlign: 'center',
+          }}
+        >
+          Notre club participe à la semaine « Portes Ouvertes du Sport à
+          Fontaine » du 5 au 13 juin. Pour vous inscrire gratuitement aux
+          activités proposées,{' '}
+          <a
+            href="https://fontainetkd.typeform.com/to/lBeeGlNp"
+            style={{ color: 'inherit' }}
+          >
+            c’est par ici !
+          </a>
+        </p>
+      </div>
       <Banner />
       <Nav />
       <main>
