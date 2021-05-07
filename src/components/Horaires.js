@@ -11,7 +11,7 @@ function Horaires() {
       <div id="horaires" className={styles.inner}>
         <Heading>Horaires</Heading>
         <div className={styles.content}>
-          {Object.entries(Times).map(([day, times], colIndex) => (
+          {/* {Object.entries(Times).map(([day, times], colIndex) => (
             <Fragment key={day}>
               <h3
                 className={styles.day}
@@ -50,16 +50,15 @@ function Horaires() {
               ))}
             </Fragment>
           ))}
-          <span className={styles.midday} />
+          <span className={styles.midday} /> */}
 
           <div className={styles.announcement}>
             <FiInfo className={styles.announcementIcon} />
             <p>
-              En raison de la situation sanitaire, les entraînements ados/adultes se
-              déroulent actuellement en extérieur ou en visioconférence. Un
-              système de réservation a été mis en place afin de respecter la
-              limite de 10 personnes par créneau. Pour en savoir plus ou faire
-              une scéance d’essai,{' '}
+              En raison de la situation sanitaire, les entraînements
+              ados/adultes se déroulent actuellement en extérieur, parc Karl
+              Marx, et en visioconférence. Pour en savoir plus ou faire une
+              scéance d’essai,{' '}
               <a
                 href="https://fontainetkd.typeform.com/to/YlcrgiPQ"
                 target="_blank"
