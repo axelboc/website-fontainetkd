@@ -30,9 +30,17 @@ function IndexPage(props) {
             textAlign: 'center',
           }}
         >
-          Notre club participe à la semaine « Portes Ouvertes du Sport à
-          Fontaine » du 5 au 13 juin. Pour vous inscrire gratuitement aux
-          activités proposées,{' '}
+          Notre club participe à l’opération{' '}
+          <a
+            href="https://omsfontaine.assoconnect.com/page/1417530-operation-portes-ouvertes"
+            style={{ color: 'inherit' }}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            « Portes Ouvertes »
+          </a>{' '}
+          du mouvement sportif fontainois, du 5 au 13 juin. Pour vous inscrire
+          gratuitement aux activités proposées,{' '}
           <a
             href="https://fontainetkd.typeform.com/to/lBeeGlNp"
             style={{ color: 'inherit' }}
