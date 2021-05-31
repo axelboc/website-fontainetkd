@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { FiExternalLink, FiInfo } from 'react-icons/fi';
+import { FiExternalLink } from 'react-icons/fi';
 
 import { Times } from '../data';
 import Heading from './Heading';
@@ -11,7 +11,7 @@ function Horaires() {
       <div id="horaires" className={styles.inner}>
         <Heading>Horaires</Heading>
         <div className={styles.content}>
-          {/* {Object.entries(Times).map(([day, times], colIndex) => (
+          {Object.entries(Times).map(([day, times], colIndex) => (
             <Fragment key={day}>
               <h3
                 className={styles.day}
@@ -22,7 +22,7 @@ function Horaires() {
               {colIndex > 0 && (
                 <span
                   className={styles.dayBorder}
-                  style={{ gridColumn: colIndex + 1, gridRow: '1 / span 13' }}
+                  style={{ gridColumn: colIndex + 1, gridRow: '1 / span 16' }}
                 />
               )}
               {times.map(({ from, to, gridRow, section, location }) => (
@@ -50,9 +50,9 @@ function Horaires() {
               ))}
             </Fragment>
           ))}
-          <span className={styles.midday} /> */}
+          <span className={styles.midday} />
 
-          <div className={styles.announcement}>
+          {/* <div className={styles.announcement}>
             <FiInfo className={styles.announcementIcon} />
             <p>
               En raison de la situation sanitaire, les entraînements
@@ -68,7 +68,7 @@ function Horaires() {
               </a>
               .
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
