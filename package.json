@@ -10,7 +10,7 @@
     "url": "https://github.com/axelboc/website-fontainetkd"
   },
   "engines": {
-    "node": "^12.14.1",
+    "node": "16.*",
     "yarn": "*"
   },
   "scripts": {
