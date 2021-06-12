@@ -16,39 +16,7 @@ function IndexPage(props) {
   return (
     <>
       <Meta />
-      <div
-        style={{
-          backgroundColor: 'var(--minsk)',
-          color: 'white',
-          padding: '1rem 2rem',
-        }}
-      >
-        <p
-          style={{
-            maxWidth: '40em',
-            margin: '0 auto 0.25rem',
-            textAlign: 'center',
-          }}
-        >
-          Notre club participe à l’opération{' '}
-          <a
-            href="https://omsfontaine.assoconnect.com/page/1417530-operation-portes-ouvertes"
-            style={{ color: 'inherit' }}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            « Portes Ouvertes »
-          </a>{' '}
-          du mouvement sportif fontainois, du 5 au 13 juin. Pour vous inscrire
-          gratuitement aux activités proposées,{' '}
-          <a
-            href="https://fontainetkd.typeform.com/to/lBeeGlNp"
-            style={{ color: 'inherit' }}
-          >
-            c’est par ici !
-          </a>
-        </p>
-      </div>
+      {/* <NewsBar /> */}
       <Banner />
       <Nav />
       <main>

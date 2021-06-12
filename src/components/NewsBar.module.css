@@ -1,0 +1,15 @@
+.bar {
+  background-color: var(--minsk);
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.message {
+  max-width: 40em;
+  margin: 0 auto 0.25rem;
+  text-align: center;
+}
+
+.message a {
+  color: inherit;
+}
