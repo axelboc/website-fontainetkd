@@ -12,6 +12,7 @@ module.exports = createConfig({
     {
       files: tsFiles,
       rules: {
+        '@typescript-eslint/no-floating-promises': 'off',
         '@typescript-eslint/explicit-module-boundary-types': 'off',
 
         // Unused vars should be removed but not prevent compilation

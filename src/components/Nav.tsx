@@ -1,15 +1,23 @@
 import { useEffect } from 'react';
-import SmoothScroll from 'smooth-scroll';
+import type SmoothScroll from 'smooth-scroll';
 
 import Falcon from '../assets/falcon.svg';
 import { sticky, nav, topLink, item, link } from './Nav.module.css';
 
 function Nav() {
   useEffect(() => {
-    const scroll = new SmoothScroll('[href*="#"]', {
-      offset: 48,
-      updateURL: false,
-    });
+    let scroll: SmoothScroll;
+
+    // `smooth-scroll` doesn't support SSR
+    // eslint-disable-next-line promise/prefer-await-to-then
+    import(/* webpackChunkName: "smootScroll" */ 'smooth-scroll').then(
+      ({ default: SmoothScroll }) => {
+        scroll = new SmoothScroll('[href*="#"]', {
+          offset: 48,
+          updateURL: false,
+        });
+      }
+    );
 
     return () => {
       scroll.destroy();
