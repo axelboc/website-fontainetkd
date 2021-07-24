@@ -25,8 +25,8 @@ function Sections(props) {
               Taekwon‑Do
             </li>
             <li>
-              <FiCalendar className={styles.icon} /> Une scéance d’entraînement
-              de 45&nbsp;min par&nbsp;semaine
+              <FiCalendar className={styles.icon} /> Deux entraînements de
+              45&nbsp;min par&nbsp;semaine parmi trois&nbsp;créneaux
             </li>
             <li>
               <FiCheckCircle className={styles.icon} /> Développe la
@@ -60,8 +60,8 @@ function Sections(props) {
               de&nbsp;fitness
             </li>
             <li>
-              <FiCalendar className={styles.icon} /> Trois séances
-              d’entraînement par&nbsp;semaine
+              <FiCalendar className={styles.icon} /> Quatre entraînements
+              par&nbsp;semaine dont un réservé aux&nbsp;ados
             </li>
             <li>
               <FiCheckCircle className={styles.icon} /> Pratique complète :
@@ -95,8 +95,8 @@ function Sections(props) {
               repousser ses&nbsp;limites
             </li>
             <li>
-              <FiCalendar className={styles.icon} /> Deux séances d’entraînement
-              par&nbsp;semaine, en matinée
+              <FiCalendar className={styles.icon} /> Une séance
+              par&nbsp;semaine, en&nbsp;matinée
             </li>
             <li>
               <FiCheckCircle className={styles.icon} /> Utilisation des

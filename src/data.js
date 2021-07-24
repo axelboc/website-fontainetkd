@@ -4,6 +4,12 @@ export const Locations = {
     gmapUrl: 'https://goo.gl/maps/SXapWD8XvWmMDSCNA',
     address: 'Gymnase Robert Vial, Allée de Geve, 38600 Fontaine, France',
   },
+  GymnaseAB: {
+    name: 'Gymnase A. Bergès',
+    gmapUrl: 'https://goo.gl/maps/hHby3Woc6KHkD7Au5',
+    address:
+      'Gymnase Aristide Bergès, 25 Allée des Balmes, 38170 Seyssinet-Pariset, France',
+  },
   DojangKM: {
     name: 'Dojang Karl Marx',
     gmapUrl: 'https://g.page/FontaineTKD?share',
@@ -21,7 +27,43 @@ export const Locations = {
   },
 };
 
+export const MIDDAY_POSITION = 5;
+
 export const Times = {
+  Lundi: [
+    {
+      from: '17:00',
+      to: '17:45',
+      duration: 0.75,
+      start: 7,
+      section: 'Enfants',
+      location: Locations.GymnaseAB,
+    },
+    {
+      from: '18:00',
+      to: '18:45',
+      duration: 0.75,
+      start: 10,
+      section: 'Enfants',
+      location: Locations.GymnaseAB,
+    },
+    {
+      from: '19:00',
+      to: '20:00',
+      duration: 1,
+      start: 13,
+      section: 'Ados',
+      location: Locations.GymnaseAB,
+    },
+    {
+      from: '20:00',
+      to: '21:00',
+      duration: 1,
+      start: 17,
+      section: 'Ados / Adultes',
+      location: Locations.GymnaseAB,
+    },
+  ],
   Mardi: [
     {
       from: '9:30',
@@ -32,60 +74,33 @@ export const Times = {
       location: Locations.ParcGP,
       variant: 'summer',
     },
-    {
-      from: '18:00',
-      to: '18:45',
-      duration: 0.75,
-      start: 7,
-      section: 'Enfants',
-      location: Locations.GymnaseRV,
-    },
-    {
-      from: '18:45',
-      to: '19:30',
-      duration: 0.75,
-      start: 10,
-      section: 'Enfants',
-      location: Locations.GymnaseRV,
-    },
-    {
-      from: '19:30',
-      to: '21:00',
-      duration: 1.5,
-      start: 13,
-      section: 'Ados / Adultes',
-      location: Locations.GymnaseRV,
-    },
   ],
   Mercredi: [
     {
+      from: '16:30',
+      to: '17:15',
+      duration: 0.75,
+      start: 6,
+      section: 'Enfants',
+      location: Locations.GymnaseAB,
+    },
+    {
       from: '19:30',
       to: '21:00',
-      duration: 1.5,
-      start: 13,
-      section: 'Ados / Adultes',
-      location: Locations.DojangKM,
-    },
-  ],
-  Vendredi: [
-    {
-      from: '20:30',
-      to: '22:00',
       duration: 1.5,
       start: 15,
       section: 'Ados / Adultes',
       location: Locations.DojangKM,
     },
   ],
-  Samedi: [
+  Vendredi: [
     {
-      from: '10:00',
-      to: '11:00',
-      duration: 1,
-      start: 2,
-      section: 'Été Fitness',
-      location: Locations.ParcKM,
-      variant: 'summer',
+      from: '20:00',
+      to: '21:30',
+      duration: 1.5,
+      start: 17,
+      section: 'Ados / Adultes',
+      location: Locations.GymnaseAB,
     },
   ],
 };

@@ -180,7 +180,6 @@
 
   .midday {
     grid-column: 1 / span var(--cols);
-    grid-row: 7;
     z-index: -1;
     background-color: var(--lochmara);
   }

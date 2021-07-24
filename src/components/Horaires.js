@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { FiExternalLink, FiSun } from 'react-icons/fi';
 
-import { Times } from '../data';
+import { MIDDAY_POSITION, Times } from '../data';
 import Heading from './Heading';
 import styles from './Horaires.module.css';
 
@@ -9,7 +9,7 @@ function Horaires() {
   return (
     <section className={styles.root}>
       <div id="horaires" className={styles.inner}>
-        <Heading>Horaires</Heading>
+        <Heading>Créneaux 2021 / 2022</Heading>
         <div className={styles.content}>
           <div className={styles.contentInner}>
             {Object.entries(Times).map(([day, times], colIndex) => (
@@ -65,18 +65,21 @@ function Horaires() {
                 )}
               </Fragment>
             ))}
-            <span className={styles.midday} />
+            <span
+              className={styles.midday}
+              style={{ gridRow: MIDDAY_POSITION + 1 }}
+            />
           </div>
 
           <div className={styles.announcement}>
             <FiSun className={styles.announcementIcon} />
             <p>
               En juillet/août, nous organisons des scéances de Fight Fitness
-              pour adultes les mardis et samedis matins aux parcs Pompidou à
-              Grenoble et Karl Marx à Fontaine. Ces scéances sont gratuites et
-              ouvertes à tous, sans adhésion, donc venez en profiter ! Le
-              calendrier exact dépendra des disponibilités de Cassie, notre
-              instructrice. Mieux vaut donc l’informer de votre venue à l’avance{' '}
+              pour adultes les mardis matins au parc Pompidou à Grenoble. Ces
+              scéances sont gratuites et ouvertes à tous, sans adhésion, donc
+              venez en profiter ! Le calendrier exact dépendra des
+              disponibilités de Cassie, notre instructrice. Mieux vaut donc
+              l’informer de votre venue à l’avance{' '}
               <a href="https://www.facebook.com/FontaineTKD/">via Facebook</a>.
             </p>
           </div>
