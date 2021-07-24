@@ -14,7 +14,7 @@ import Heading from './Heading';
 function Adhesion() {
   return (
     <section className={styles.root}>
-      <div id="adhesion" className={styles.inner}>
+      <div id="cotisation" className={styles.inner}>
         <Heading>Adhésion</Heading>
         <div className={styles.content}>
           <div className={styles.fees}>
