@@ -10,13 +10,14 @@ import Footer from '../components/Footer';
 import Horaires from '../components/Horaires';
 import Meta from '../components/Meta';
 import Nav from '../components/Nav';
+import NewsBar from '../components/NewsBar';
 import Sections from '../components/Sections';
 
 function IndexPage(props) {
   return (
     <>
       <Meta />
-      {/* <NewsBar /> */}
+      <NewsBar />
       <Banner />
       <Nav />
       <main>

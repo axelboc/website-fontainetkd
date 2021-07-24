@@ -6,19 +6,10 @@ function NewsBar() {
   return (
     <div className={styles.bar}>
       <p className={styles.message}>
-        Notre club participe à l’opération{' '}
-        <a
-          href="https://omsfontaine.assoconnect.com/page/1417530-operation-portes-ouvertes"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          « Portes Ouvertes »
-        </a>{' '}
-        du mouvement sportif fontainois, du 5 au 13 juin. Pour vous inscrire
-        gratuitement aux activités proposées,{' '}
-        <a href="https://fontainetkd.typeform.com/to/lBeeGlNp">
-          c’est par ici !
-        </a>
+        Rendez-vous <strong>samedi 4 septembre</strong> au{' '}
+        <em>Forum des Sports et de la Vie Associative</em>,
+        parc&nbsp;de&nbsp;la&nbsp;Poya. D’ici là, bonne vacances
+        à&nbsp;tous&nbsp;!
       </p>
     </div>
   );
