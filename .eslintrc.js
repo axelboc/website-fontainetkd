@@ -27,3 +27,5 @@ module.exports = createConfig({
     },
   ],
 });
+
+console.log(module.exports);
