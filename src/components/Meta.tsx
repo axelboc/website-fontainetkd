@@ -1,4 +1,3 @@
-import React from 'react';
 import { Helmet } from 'react-helmet';
 
 import logo from '../assets/fontaine-taekwondo-logo.png';
@@ -30,7 +29,7 @@ function Meta() {
       />
       <meta name="description" content={DESCRIPTION} />
       <meta property="og:type" content="website" />
-      <meta property="og:site_name" content={TITLE}></meta>
+      <meta property="og:site_name" content={TITLE} />
       <meta property="og:title" content={SUBTITLE} />
       <meta property="og:description" content={DESCRIPTION} />
       <meta property="og:image" content={logo} />

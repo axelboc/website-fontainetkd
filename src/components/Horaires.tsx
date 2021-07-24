@@ -1,7 +1,7 @@
-import React, { Fragment } from 'react';
+import { Fragment } from 'react';
 import { FiExternalLink, FiSun } from 'react-icons/fi';
 
-import { MIDDAY_POSITION, Times } from '../data';
+import { LOCATIONS, MIDDAY_POSITION, TIMES } from '../data';
 import Heading from './Heading';
 import * as styles from './Horaires.module.css';
 
@@ -12,7 +12,7 @@ function Horaires() {
         <Heading>Créneaux 2021 / 2022</Heading>
         <div className={styles.content}>
           <div className={styles.contentInner}>
-            {Object.entries(Times).map(([day, times], colIndex) => (
+            {Object.entries(TIMES).map(([day, times], colIndex) => (
               <Fragment key={day}>
                 <h3
                   className={styles.day}
@@ -53,11 +53,11 @@ function Horaires() {
                       <span className={styles.section}>{section}</span>
                       <a
                         className={styles.locationLink}
-                        href={location.gmapUrl}
+                        href={LOCATIONS[location].gmapUrl}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        {location.name}
+                        {LOCATIONS[location].name}
                         <FiExternalLink className={styles.externalIcon} />
                       </a>
                     </div>

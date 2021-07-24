@@ -1,8 +1,8 @@
 import '../styles/index.css';
 
-import { graphql } from 'gatsby';
+import { graphql, PageProps } from 'gatsby';
+import type { IGatsbyImageData } from 'gatsby-plugin-image';
 import PropTypes from 'prop-types';
-import React from 'react';
 
 import Adhesion from '../components/Adhesion';
 import Banner from '../components/Banner';
@@ -13,20 +13,31 @@ import Nav from '../components/Nav';
 import NewsBar from '../components/NewsBar';
 import Sections from '../components/Sections';
 
-function IndexPage(props) {
+type IndexData = Record<
+  string,
+  { childImageSharp: { gatsbyImageData: IGatsbyImageData } }
+>;
+
+function IndexPage(props: PageProps<IndexData>) {
+  const { data } = props;
+
   return (
-    <>
+    <div id="top">
       <Meta />
       <NewsBar />
       <Banner />
       <Nav />
       <main>
-        <Sections {...props.data} />
+        <Sections
+          photo1={data.photo1.childImageSharp.gatsbyImageData}
+          photo2={data.photo2.childImageSharp.gatsbyImageData}
+          photo3={data.photo3.childImageSharp.gatsbyImageData}
+        />
         <Horaires />
         <Adhesion />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
 
@@ -34,6 +45,7 @@ IndexPage.propTypes = {
   data: PropTypes.object.isRequired,
 };
 
+// eslint-disable-next-line @typescript-eslint/no-confusing-void-expression
 export const query = graphql`
   query {
     photo1: file(relativePath: { eq: "photo1.jpg" }) {
