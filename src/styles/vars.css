@@ -7,16 +7,16 @@
   --link-water: #dcedff;
 
   /* Fonts */
-  --font-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+  --font-base: -apple-system, blinkmacsystemfont, 'Segoe UI', 'Roboto',
     'Helvetica Neue', 'Arial', 'Noto Sans', sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  --font-heading-base: 'Impact Regular', Haettenschweiler,
-    'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat',
+  --font-heading-base: 'Impact Regular', haettenschweiler,
+    'Franklin Gothic Bold', charcoal, 'Helvetica Inserat',
     'Bitstream Vera Sans Bold', 'Arial Black', sans serif;
   --font-heading: 'Areno', var(--font-heading-base);
   --font-title: 'Areno Rough', var(--font-heading-base);
-  --font-monospace: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo,
-    Courier, monospace;
+  --font-monospace: 'SFMono-Regular', consolas, 'Liberation Mono', menlo,
+    courier, monospace;
 
   /* Stacking */
   --zi-nav: 1;
@@ -38,7 +38,7 @@
 }
 
 @font-face {
-  font-family: 'Impact Regular';
   font-weight: bold;
+  font-family: 'Impact Regular';
   src: local('Impact');
 }

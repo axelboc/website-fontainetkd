@@ -34,9 +34,9 @@
   }
 
   &:not(:last-child)::after {
-    content: '';
     height: 1.5rem;
     border-right: 2px solid var(--lochmara);
+    content: '';
   }
 }
 

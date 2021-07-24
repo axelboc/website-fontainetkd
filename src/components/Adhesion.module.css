@@ -12,8 +12,8 @@
 }
 
 .fees {
-  flex: 1 1 0%;
   display: flex;
+  flex: 1 1 0%;
   flex-direction: column;
   justify-content: center;
   list-style: none;
@@ -34,29 +34,29 @@
 }
 
 .price {
-  font-family: var(--font-monospace);
-  font-size: 300%;
-  font-weight: bold;
-  line-height: 1.1;
   color: white;
+  font-weight: bold;
+  font-size: 300%;
+  font-family: var(--font-monospace);
+  line-height: 1.1;
 }
 
 .price > span {
+  font-weight: normal;
   font-size: 60%;
-  font-weight: 400;
-  vertical-align: 0.25rem;
   font-family: var(--font-base);
+  vertical-align: 0.25rem;
 }
 
 .list {
-  flex: 1 1 0%;
   display: flex;
+  flex: 1 1 0%;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 1rem;
   padding: 1rem 1rem 1rem 3rem;
-  background-color: white;
   list-style: none;
+  background-color: white;
 }
 
 .list > li {
@@ -70,8 +70,8 @@
 }
 
 .highlight {
-  font-size: 120%;
   font-weight: 600;
+  font-size: 120%;
 }
 
 .highlight:nth-child(2) {

@@ -94,13 +94,11 @@
   .header::before {
     left: 0;
     transform-origin: bottom;
-    /* clip-path: polygon(0 0, 40% 0, 100% 100%, 0 100%); */
   }
 
   .header::after {
     right: 0;
     transform-origin: top;
-    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%); */
   }
 
   .logo {
