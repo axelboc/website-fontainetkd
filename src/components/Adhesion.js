@@ -8,7 +8,7 @@ import {
   FiStar,
 } from 'react-icons/fi';
 
-import styles from './Adhesion.module.css';
+import * as styles from './Adhesion.module.css';
 import Heading from './Heading';
 
 function Adhesion() {

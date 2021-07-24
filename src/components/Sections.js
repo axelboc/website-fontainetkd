@@ -1,4 +1,4 @@
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import React from 'react';
 import {
   FiCalendar,
@@ -9,10 +9,10 @@ import {
 } from 'react-icons/fi';
 
 import Heading from './Heading';
-import styles from './Sections.module.css';
+import * as styles from './Sections.module.css';
 
 function Sections(props) {
-  const { photo1, photo2, photo3 } = props; // eslint-disable-line
+  const { photo1, photo2, photo3 } = props;
 
   return (
     <div id="sections">
@@ -42,9 +42,10 @@ function Sections(props) {
             </li>
           </ul>
           <div className={styles.imgWrap}>
-            <Img
+            <GatsbyImage
               className={styles.img}
-              fluid={photo1.childImageSharp.fluid} // eslint-disable-line
+              image={photo1.childImageSharp.gatsbyImageData}
+              alt=""
             />
           </div>
         </div>
@@ -77,9 +78,10 @@ function Sections(props) {
             </li>
           </ul>
           <div className={styles.imgWrap}>
-            <Img
+            <GatsbyImage
               className={styles.img}
-              fluid={photo3.childImageSharp.fluid} // eslint-disable-line
+              image={photo3.childImageSharp.gatsbyImageData}
+              alt=""
             />
           </div>
         </div>
@@ -112,9 +114,10 @@ function Sections(props) {
             </li>
           </ul>
           <div className={styles.imgWrap}>
-            <Img
+            <GatsbyImage
               className={styles.img}
-              fluid={photo2.childImageSharp.fluid} // eslint-disable-line
+              image={photo2.childImageSharp.gatsbyImageData}
+              alt=""
             />
           </div>
         </div>

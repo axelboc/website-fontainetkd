@@ -38,23 +38,17 @@ export const query = graphql`
   query {
     photo1: file(relativePath: { eq: "photo1.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 785) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
+        gatsbyImageData(width: 785)
       }
     }
     photo2: file(relativePath: { eq: "photo2.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 785) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
+        gatsbyImageData(width: 785)
       }
     }
     photo3: file(relativePath: { eq: "photo3.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 785) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
+        gatsbyImageData(width: 785)
       }
     }
   }

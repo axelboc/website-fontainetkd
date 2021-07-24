@@ -1,7 +1,7 @@
 import React from 'react';
 import { FiShare2 } from 'react-icons/fi';
 
-import styles from './Footer.module.css';
+import * as styles from './Footer.module.css';
 
 function Footer() {
   return (

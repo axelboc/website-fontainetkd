@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import styles from './Heading.module.css';
+import * as styles from './Heading.module.css';
 
 function Heading(props) {
   const { sub, level = 2, children } = props;

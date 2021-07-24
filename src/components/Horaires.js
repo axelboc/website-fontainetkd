@@ -3,7 +3,7 @@ import { FiExternalLink, FiSun } from 'react-icons/fi';
 
 import { MIDDAY_POSITION, Times } from '../data';
 import Heading from './Heading';
-import styles from './Horaires.module.css';
+import * as styles from './Horaires.module.css';
 
 function Horaires() {
   return (
@@ -75,11 +75,11 @@ function Horaires() {
             <FiSun className={styles.announcementIcon} />
             <p>
               En juillet/août, nous organisons des scéances de Fight Fitness
-              pour adultes les mardis matins au parc Pompidou à Grenoble. Ces
-              scéances sont gratuites et ouvertes à tous, sans adhésion, donc
-              venez en profiter ! Le calendrier exact dépendra des
-              disponibilités de Cassie, notre instructrice. Mieux vaut donc
-              l’informer de votre venue à l’avance{' '}
+              pour adultes les mardis matins, au parc Pompidou à&nbsp;Grenoble.
+              Ces scéances sont gratuites et ouvertes à tous, sans adhésion,
+              donc venez en profiter ! Le calendrier exact dépend des
+              disponibilités notre instructrice. Mieux vaut donc l’informer de
+              votre venue{' '}
               <a href="https://www.facebook.com/FontaineTKD/">via Facebook</a>.
             </p>
           </div>

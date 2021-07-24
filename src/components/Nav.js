@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
 import Falcon from '../assets/falcon.svg';
-import styles from './Nav.module.css';
+import * as styles from './Nav.module.css';
 
 let scroll;
 
