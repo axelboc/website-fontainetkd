@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "target": "esnext",
     "checkJs": true
   },
   "exclude": [".cache", "node_modules", "public"]
