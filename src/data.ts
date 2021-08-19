@@ -17,7 +17,7 @@ export const LOCATIONS: Record<string, LocationInfo> = {
     gmapUrl: 'https://goo.gl/maps/SXapWD8XvWmMDSCNA',
   },
   [Location.GymnaseAB]: {
-    name: 'Gymnase A. Bergès',
+    name: 'Gymnase Bergès',
     gmapUrl: 'https://goo.gl/maps/hHby3Woc6KHkD7Au5',
   },
   [Location.DojangKM]: {
@@ -38,6 +38,7 @@ enum Section {
   Kids = 'Enfants',
   Teens = 'Ados',
   TeensAdult = 'Ados / Adultes',
+  FightFitness = 'Fight Fitness',
   SummerFitness = 'Été Fitness',
 }
 
@@ -87,17 +88,7 @@ export const TIMES: Record<string, Time[]> = {
       location: Location.GymnaseAB,
     },
   ],
-  Mardi: [
-    {
-      from: '9:30',
-      to: '10:30',
-      duration: 1,
-      start: 1,
-      section: Section.SummerFitness,
-      location: Location.ParcGP,
-      variant: 'summer',
-    },
-  ],
+  Mardi: [],
   Mercredi: [
     {
       from: '16:30',
@@ -113,6 +104,16 @@ export const TIMES: Record<string, Time[]> = {
       duration: 1.5,
       start: 15,
       section: Section.TeensAdult,
+      location: Location.DojangKM,
+    },
+  ],
+  Jeudi: [
+    {
+      from: '11:00',
+      to: '12:00',
+      duration: 1,
+      start: 1,
+      section: Section.FightFitness,
       location: Location.DojangKM,
     },
   ],

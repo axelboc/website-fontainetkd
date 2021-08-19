@@ -17,6 +17,7 @@ function Horaires() {
                 <h3
                   className={styles.day}
                   style={{ gridColumn: colIndex + 1, gridRow: 1 }}
+                  data-empty={times.length === 0}
                 >
                   {day}
                 </h3>
@@ -36,13 +37,16 @@ function Horaires() {
                     location,
                     variant,
                   }) => (
-                    <div
+                    <a
                       key={`${from}-${to}`}
                       className={styles.entry}
                       style={{
                         gridColumn: colIndex + 1,
                         gridRow: `${start + 1} / span ${duration * 4}`,
                       }}
+                      href={LOCATIONS[location].gmapUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       data-variant={variant}
                     >
                       <span className={styles.time}>
@@ -51,16 +55,11 @@ function Horaires() {
                         {to}
                       </span>
                       <span className={styles.section}>{section}</span>
-                      <a
-                        className={styles.locationLink}
-                        href={LOCATIONS[location].gmapUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
+                      <span className={styles.location}>
                         {LOCATIONS[location].name}
-                        <FiExternalLink className={styles.externalIcon} />
-                      </a>
-                    </div>
+                      </span>
+                      <FiExternalLink className={styles.externalIcon} />
+                    </a>
                   )
                 )}
               </Fragment>
