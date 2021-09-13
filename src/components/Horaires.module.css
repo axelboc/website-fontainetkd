@@ -26,8 +26,8 @@
   text-align: center;
   background-color: white;
   border-radius: 0.25rem;
-  outline-offset: 4px;
   outline-color: white;
+  outline-offset: 4px;
 }
 
 .entry:hover,

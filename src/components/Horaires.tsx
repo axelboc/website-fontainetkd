@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { FiExternalLink, FiSun } from 'react-icons/fi';
+import { FiExternalLink } from 'react-icons/fi';
 
 import { LOCATIONS, MIDDAY_POSITION, TIMES } from '../data';
 import Heading from './Heading';
@@ -70,7 +70,7 @@ function Horaires() {
             />
           </div>
 
-          <div className={styles.announcement}>
+          {/* <div className={styles.announcement}>
             <FiSun className={styles.announcementIcon} />
             <p>
               En juillet/août, nous organisons des scéances de Fight Fitness
@@ -81,7 +81,7 @@ function Horaires() {
               votre venue{' '}
               <a href="https://www.facebook.com/FontaineTKD/">via Facebook</a>.
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
