@@ -7,24 +7,24 @@ import {
   FiStar,
 } from 'react-icons/fi';
 
-import * as styles from './Adhesion.module.css';
+import * as styles from './Cotisation.module.css';
 import Heading from './Heading';
 
-function Adhesion() {
+function Cotisation() {
   return (
     <section className={styles.root}>
       <div id="cotisation" className={styles.inner}>
-        <Heading>Adhésion</Heading>
+        <Heading>Cotisation</Heading>
         <div className={styles.content}>
           <div className={styles.fees}>
             <p>
-              <span className={styles.age}>de 6 à 15 ans</span>{' '}
+              <span className={styles.age}>écoli·er·ère du primaire</span>{' '}
               <span className={styles.price}>
-                100 € <span>/ an</span>
+                120 € <span>/ an</span>
               </span>
             </p>
             <p>
-              <span className={styles.age}>à partir de 16 ans</span>{' '}
+              <span className={styles.age}>ado / adulte</span>{' '}
               <span className={styles.price}>
                 150 € <span>/ an</span>
               </span>
@@ -43,10 +43,11 @@ function Adhesion() {
             </li>
             <li>
               <FiHeart className={styles.icon} /> Aide de 20 à 35 € aux
-              Fontainois éligibles
+              Fontainois·es éligibles
             </li>
             <li>
-              <FiCreditCard className={styles.icon} /> Pass’sport Isère accepté
+              <FiCreditCard className={styles.icon} /> Carte Tatoo, Pass’Région
+              et Pass'Sport acceptés
             </li>
             <li>
               <FiScissors className={styles.icon} /> Paiement en deux ou trois
@@ -63,4 +64,4 @@ function Adhesion() {
   );
 }
 
-export default Adhesion;
+export default Cotisation;

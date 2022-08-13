@@ -39,7 +39,7 @@ function Nav() {
           <span className={item}>Horaires</span>
         </a>
         <a className={link} href="#cotisation">
-          <span className={item}>Adhésion</span>
+          <span className={item}>Cotisation</span>
         </a>
         <a
           className={link}

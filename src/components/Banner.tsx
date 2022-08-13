@@ -18,7 +18,8 @@ function Banner() {
           <div className={intro}>
             <p>
               Venez découvrir le Taekwon‑Do ITF, un <strong>art martial</strong>{' '}
-              coréen moderne conçu pour l’auto-défense&nbsp;!
+              coréen moderne alliant combat sportif, self-défense et pratique
+              traditionnelle&nbsp;!
             </p>
             <p>
               Notre association sportive est basée à Fontaine, près de{' '}

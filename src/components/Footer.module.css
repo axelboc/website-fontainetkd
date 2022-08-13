@@ -1,8 +1,8 @@
 .root {
-  padding: 1.5rem 1.5rem 2.25rem;
+  padding: 2.25rem 1.5rem;
   font-size: 112.5%;
   text-align: center;
-  border-top: 1.5rem solid var(--candlelight);
+  background-color: var(--candlelight);
 }
 
 .icon {

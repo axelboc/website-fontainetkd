@@ -42,13 +42,13 @@
   text-align: left;
 }
 
-@media (width >= 32em) {
+@media (width >= 34em) {
   .title {
     width: auto;
   }
 }
 
-@media (width >= 52em) {
+@media (width >= 56em) {
   .inner {
     display: flex;
     justify-content: center;

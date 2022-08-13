@@ -55,14 +55,16 @@
 
 .separator::before {
   display: block;
-  height: 1.5rem;
+  height: 4.375rem;
   color: var(--candlelight);
-  background: repeating-linear-gradient(
+  background-color: currentColor;
+  content: '';
+
+  /* background: repeating-linear-gradient(
     calc(85deg - var(--skew-angle)),
     transparent -20px,
     transparent 0,
     currentColor 0,
     currentColor calc(-20px + 2 * 20px)
-  );
-  content: '';
+  ); */
 }

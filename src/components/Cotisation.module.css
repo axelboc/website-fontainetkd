@@ -78,19 +78,19 @@
   margin-bottom: 1.5rem;
 }
 
-@media (43em <= width < 60em) {
+@media (45em <= width < 60em) {
   .fees > p {
     flex-direction: row;
     align-items: flex-end;
     padding: 0.75rem 2rem 1rem;
   }
 
-  .age,
-  .price {
+  .age {
     flex: 1 1 0%;
   }
 
   .price {
+    flex: none;
     text-align: right;
   }
 }

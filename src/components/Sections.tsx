@@ -17,20 +17,20 @@ export interface SectionPhotos {
 }
 
 function Sections(props: SectionPhotos) {
-  const { photo1, photo2, photo3 } = props;
+  const { photo1, photo3 } = props;
 
   return (
     <div id="sections">
       <article>
-        <Heading sub="de 6 à 9 ans">Section enfants</Heading>
+        <Heading sub="de 6 à 9 ans">Section enfant</Heading>
         <div className={content}>
           <ul className={list}>
             <li>
               <FiSmile className={icon} /> Initiation ludique au Taekwon‑Do
             </li>
             <li>
-              <FiCalendar className={icon} /> Deux entraînements de 45&nbsp;min
-              par&nbsp;semaine parmi trois&nbsp;créneaux
+              <FiCalendar className={icon} /> Deux séances de 45&nbsp;min
+              par&nbsp;semaine
             </li>
             <li>
               <FiCheckCircle className={icon} /> Développe la coordination,
@@ -38,7 +38,7 @@ function Sections(props: SectionPhotos) {
             </li>
             <li>
               <FiCreditCard className={icon} /> Cotisation annuelle unique de
-              100&nbsp;€, uniforme&nbsp;inclus&nbsp;!
+              120&nbsp;€, uniforme&nbsp;inclus&nbsp;!
             </li>
             <li>
               <FiMessageCircle className={icon} /> Cours bilingues
@@ -51,7 +51,7 @@ function Sections(props: SectionPhotos) {
         </div>
       </article>
       <article>
-        <Heading sub="à partir de 10 ans">Section ados &amp; adultes</Heading>
+        <Heading sub="à partir de 9 ans">Section ado / adulte</Heading>
         <div className={content}>
           <ul className={list}>
             <li>
@@ -59,16 +59,16 @@ function Sections(props: SectionPhotos) {
               de&nbsp;fitness
             </li>
             <li>
-              <FiCalendar className={icon} /> Quatre entraînements
-              par&nbsp;semaine dont un réservé aux&nbsp;ados
+              <FiCalendar className={icon} /> Quatre séances par&nbsp;semaine
+              dont une réservée aux&nbsp;ados (9-18)
             </li>
             <li>
-              <FiCheckCircle className={icon} /> Pratique complète :
-              self-défense, combat, formes, casse,&nbsp;etc.
+              <FiCheckCircle className={icon} /> Pratique complète : combat,
+              formes, self-défense, casse,&nbsp;etc.
             </li>
             <li>
               <FiCreditCard className={icon} /> Cotisation annuelle unique de
-              100 à 150&nbsp;€, uniforme&nbsp;inclus&nbsp;!
+              150&nbsp;€, uniforme&nbsp;inclus&nbsp;!
             </li>
             <li>
               <FiMessageCircle className={icon} /> Cours bilingues
@@ -80,7 +80,7 @@ function Sections(props: SectionPhotos) {
           </div>
         </div>
       </article>
-      <article>
+      {/* <article>
         <Heading sub="à partir de 16 ans">Fight Fitness</Heading>
         <div className={content}>
           <ul className={list}>
@@ -109,7 +109,7 @@ function Sections(props: SectionPhotos) {
             <GatsbyImage className={img} image={photo2} alt="" />
           </div>
         </div>
-      </article>
+      </article> */}
     </div>
   );
 }

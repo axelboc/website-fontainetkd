@@ -4,8 +4,8 @@ import { graphql, PageProps } from 'gatsby';
 import type { IGatsbyImageData } from 'gatsby-plugin-image';
 import PropTypes from 'prop-types';
 
-import Adhesion from '../components/Adhesion';
 import Banner from '../components/Banner';
+import Cotisation from '../components/Cotisation';
 import Footer from '../components/Footer';
 import Horaires from '../components/Horaires';
 import Meta from '../components/Meta';
@@ -34,7 +34,7 @@ function IndexPage(props: PageProps<IndexData>) {
           photo3={data.photo3.childImageSharp.gatsbyImageData}
         />
         <Horaires />
-        <Adhesion />
+        <Cotisation />
       </main>
       <Footer />
     </div>

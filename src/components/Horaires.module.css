@@ -3,7 +3,6 @@
   background-color: var(--minsk);
 
   --cols: 5;
-  --rows: 23;
 }
 
 .inner {
@@ -60,6 +59,7 @@
 
 .location {
   display: flex;
+  align-items: center;
   margin-bottom: 0.125rem;
   font-size: 90%;
 }
@@ -70,6 +70,7 @@
 }
 
 .externalIcon {
+  margin-bottom: -2px;
   margin-left: 0.5rem;
   opacity: 0.5;
 }

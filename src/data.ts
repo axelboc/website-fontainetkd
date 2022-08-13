@@ -11,7 +11,7 @@ interface LocationInfo {
   gmapUrl: string;
 }
 
-export const LOCATIONS: Record<string, LocationInfo> = {
+export const LOCATIONS: Record<Location, LocationInfo> = {
   [Location.GymnaseRV]: {
     name: 'Gymnase R. Vial',
     gmapUrl: 'https://goo.gl/maps/SXapWD8XvWmMDSCNA',
@@ -52,38 +52,24 @@ interface Time {
   variant?: string;
 }
 
-export const MIDDAY_POSITION = 5;
+export const MIDDAY_POSITION = -1;
+export const ROWS_COUNT = 20;
+
 export const TIMES: Record<string, Time[]> = {
   Lundi: [
     {
-      from: '17:00',
-      to: '17:45',
+      from: '17:15',
+      to: '18:00',
       duration: 0.75,
-      start: 7,
+      start: 4,
       section: Section.Kids,
       location: Location.GymnaseAB,
     },
     {
       from: '18:00',
-      to: '18:45',
-      duration: 0.75,
-      start: 10,
-      section: Section.Kids,
-      location: Location.GymnaseAB,
-    },
-    {
-      from: '19:00',
-      to: '20:00',
-      duration: 1,
-      start: 13,
-      section: Section.Teens,
-      location: Location.GymnaseAB,
-    },
-    {
-      from: '20:00',
-      to: '21:00',
-      duration: 1,
-      start: 17,
+      to: '19:30',
+      duration: 1.5,
+      start: 7,
       section: Section.TeensAdult,
       location: Location.GymnaseAB,
     },
@@ -94,37 +80,36 @@ export const TIMES: Record<string, Time[]> = {
       from: '16:30',
       to: '17:15',
       duration: 0.75,
-      start: 6,
+      start: 1,
       section: Section.Kids,
+      location: Location.GymnaseAB,
+    },
+    {
+      from: '17:15',
+      to: '18:00',
+      duration: 0.75,
+      start: 4,
+      section: Section.Teens,
       location: Location.GymnaseAB,
     },
     {
       from: '19:30',
       to: '21:00',
       duration: 1.5,
-      start: 15,
+      start: 11,
       section: Section.TeensAdult,
       location: Location.DojangKM,
     },
   ],
-  Jeudi: [
-    {
-      from: '11:00',
-      to: '12:00',
-      duration: 1,
-      start: 1,
-      section: Section.FightFitness,
-      location: Location.DojangKM,
-    },
-  ],
+  Jeudi: [],
   Vendredi: [
     {
-      from: '20:00',
-      to: '21:30',
+      from: '20:30',
+      to: '22:00',
       duration: 1.5,
-      start: 17,
+      start: 14,
       section: Section.TeensAdult,
-      location: Location.GymnaseAB,
+      location: Location.DojangKM,
     },
   ],
 };

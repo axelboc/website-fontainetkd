@@ -1,15 +1,18 @@
-import { Fragment } from 'react';
+import { CSSProperties, Fragment } from 'react';
 import { FiExternalLink } from 'react-icons/fi';
 
-import { LOCATIONS, MIDDAY_POSITION, TIMES } from '../data';
+import { LOCATIONS, MIDDAY_POSITION, ROWS_COUNT, TIMES } from '../data';
 import Heading from './Heading';
 import * as styles from './Horaires.module.css';
 
 function Horaires() {
   return (
-    <section className={styles.root}>
+    <section
+      className={styles.root}
+      style={{ '--rows': ROWS_COUNT } as CSSProperties}
+    >
       <div id="horaires" className={styles.inner}>
-        <Heading>Créneaux 2021 / 2022</Heading>
+        <Heading>Créneaux 2022 / 2023</Heading>
         <div className={styles.content}>
           <div className={styles.contentInner}>
             {Object.entries(TIMES).map(([day, times], colIndex) => (
@@ -57,17 +60,19 @@ function Horaires() {
                       <span className={styles.section}>{section}</span>
                       <span className={styles.location}>
                         {LOCATIONS[location].name}
+                        <FiExternalLink className={styles.externalIcon} />
                       </span>
-                      <FiExternalLink className={styles.externalIcon} />
                     </a>
                   )
                 )}
               </Fragment>
             ))}
-            <span
-              className={styles.midday}
-              style={{ gridRow: MIDDAY_POSITION + 1 }}
-            />
+            {MIDDAY_POSITION > -1 && (
+              <span
+                className={styles.midday}
+                style={{ gridRow: MIDDAY_POSITION + 1 }}
+              />
+            )}
           </div>
 
           {/* <div className={styles.announcement}>
