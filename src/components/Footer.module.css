@@ -5,6 +5,10 @@
   background-color: var(--candlelight);
 }
 
+.root > p:last-child {
+  margin-bottom: 0.25rem;
+}
+
 .icon {
   margin: 0 1rem -0.125em;
 }
