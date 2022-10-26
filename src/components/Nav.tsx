@@ -41,13 +41,8 @@ function Nav() {
         <a className={link} href="#cotisation">
           <span className={item}>Cotisation</span>
         </a>
-        <a
-          className={link}
-          href="https://fontainetkd.typeform.com/to/YlcrgiPQ"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span className={item}>Contact</span>
+        <a className={link} href="#inscription">
+          <span className={item}>Inscription</span>
         </a>
       </nav>
     </div>

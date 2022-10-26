@@ -8,6 +8,7 @@ import Banner from '../components/Banner';
 import Cotisation from '../components/Cotisation';
 import Footer from '../components/Footer';
 import Horaires from '../components/Horaires';
+import Inscription from '../components/Inscription';
 import Meta from '../components/Meta';
 import Nav from '../components/Nav';
 // import NewsBar from '../components/NewsBar';
@@ -36,6 +37,7 @@ function IndexPage(props: PageProps<IndexData>) {
         <Horaires />
         <Cotisation />
       </main>
+      <Inscription />
       <Footer />
     </div>
   );
