@@ -27,7 +27,7 @@
     "lint:pretty": "prettier --check ."
   },
   "dependencies": {
-    "gatsby": "^3.10.1",
+    "gatsby": "^4.25.7",
     "gatsby-plugin-image": "^1.10.1",
     "gatsby-plugin-nprogress": "^3.10.0",
     "gatsby-plugin-postcss": "^4.10.0",
