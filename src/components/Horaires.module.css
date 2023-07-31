@@ -2,7 +2,7 @@
   composes: separator from global;
   background-color: var(--minsk);
 
-  --cols: 5;
+  --cols: 6;
 }
 
 .inner {
@@ -17,6 +17,14 @@
   composes: heading from global;
   color: var(--candlelight);
   font-size: 180%;
+}
+
+.day[data-empty='true'] {
+  opacity: 0.5;
+}
+
+.day > sup {
+  font-size: 60%;
 }
 
 .entry {
@@ -174,12 +182,16 @@
     display: grid;
     grid-auto-rows: minmax(1.5rem, auto);
     grid-gap: 1rem 2rem;
-    grid-template-columns: repeat(var(--cols), 1fr);
   }
 
   .day {
     margin-bottom: 1rem;
     text-align: center;
+  }
+
+  .ofMonth {
+    display: block;
+    font-size: 75%;
   }
 
   .dayBorder {

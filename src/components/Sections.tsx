@@ -59,7 +59,7 @@ function Sections(props: SectionPhotos) {
               de&nbsp;fitness
             </li>
             <li>
-              <FiCalendar className={icon} /> Quatre séances par&nbsp;semaine
+              <FiCalendar className={icon} /> Trois séances par&nbsp;semaine
               dont une réservée aux&nbsp;ados (9-18)
             </li>
             <li>

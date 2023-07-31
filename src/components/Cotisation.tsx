@@ -18,7 +18,7 @@ function Cotisation() {
         <div className={styles.content}>
           <div className={styles.fees}>
             <p>
-              <span className={styles.age}>écoli·er·ère du primaire</span>{' '}
+              <span className={styles.age}>enfant (CP–CM2)</span>{' '}
               <span className={styles.price}>
                 120 € <span>/ an</span>
               </span>

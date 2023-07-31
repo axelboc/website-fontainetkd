@@ -43,17 +43,20 @@ function Inscription() {
             enfant&nbsp;:
           </p>
           <ul>
-            <li>
+            {/* <li>
               <a
                 href={`depliant_${SEASON}.pdf`}
                 download={`Dépliant ${SEASON} - Fontaine Taekwon-Do.pdf`}
               >
                 Dépliant (PDF)
               </a>
-            </li>
+            </li> */}
             <li>
               <a
-                href="https://framaforms.org/adhesion-enfantado-20222023-1659891235"
+                href={`https://framaforms.org/adhesion-enfantado-${SEASON.replace(
+                  '-',
+                  ''
+                )}-1659891235`}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -62,7 +65,10 @@ function Inscription() {
             </li>
             <li>
               <a
-                href="https://framaforms.org/adhesion-adulte-20222023-1657976478"
+                href={`https://framaforms.org/adhesion-adulte-${SEASON.replace(
+                  '-',
+                  ''
+                )}-1657976478`}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -80,9 +86,11 @@ function Inscription() {
           </ul>
           <p>
             Dans le cas d’une adhésion familiale, remplir d’abord son propre
-            formulaire avant ceux de ses enfants. Une fois l’adhésion{' '}
-            <strong>validée par le Bureau</strong> via WhatsApp, procéder au
-            réglement de la cotisation&nbsp;:
+            formulaire avant ceux de ses enfants.
+          </p>
+          <p>
+            Une fois l’adhésion <strong>validée par le Bureau</strong> par SMS
+            ou WhatsApp, procéder au réglement de la cotisation&nbsp;:
           </p>
           <ul>
             <li>
@@ -97,7 +105,9 @@ function Inscription() {
               </small>
             </li>
             <li>
-              <a href="https://www.helloasso.com/associations/fontaine-taekwon-do/boutiques/cotisation-2022-2023">
+              <a
+                href={`https://www.helloasso.com/associations/fontaine-taekwon-do/adhesions/cotisation-${SEASON}`}
+              >
                 Carte bancaire
               </a>{' '}
               <small>&ndash; via HelloAsso</small>

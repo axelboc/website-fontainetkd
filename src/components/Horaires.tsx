@@ -1,20 +1,24 @@
 import { CSSProperties, Fragment } from 'react';
 import { FiExternalLink } from 'react-icons/fi';
 
-import { LOCATIONS, MIDDAY_POSITION, ROWS_COUNT, TIMES } from '../data';
+import { LOCATIONS, MIDDAY_POSITION, ROWS_COUNT, SEASON, TIMES } from '../data';
 import Heading from './Heading';
 import * as styles from './Horaires.module.css';
 
 function Horaires() {
+  const gridTemplateColumns = Object.values(TIMES)
+    .map((times) => (times.length > 0 ? '10fr' : '7fr'))
+    .join(' ');
+
   return (
     <section
       className={styles.root}
       style={{ '--rows': ROWS_COUNT } as CSSProperties}
     >
       <div id="horaires" className={styles.inner}>
-        <Heading>Créneaux 2022 / 2023</Heading>
+        <Heading>Créneaux {SEASON.replace('-', ' / ')}</Heading>
         <div className={styles.content}>
-          <div className={styles.contentInner}>
+          <div className={styles.contentInner} style={{ gridTemplateColumns }}>
             {Object.entries(TIMES).map(([day, times], colIndex) => (
               <Fragment key={day}>
                 <h3
@@ -22,7 +26,14 @@ function Horaires() {
                   style={{ gridColumn: colIndex + 1, gridRow: 1 }}
                   data-empty={times.length === 0}
                 >
-                  {day}
+                  {day === 'Samedi' ? (
+                    <>
+                      1<sup>er</sup> samedi{' '}
+                      <span className={styles.ofMonth}>du mois</span>
+                    </>
+                  ) : (
+                    day
+                  )}
                 </h3>
                 {colIndex > 0 && (
                   <span

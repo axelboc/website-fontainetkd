@@ -1,4 +1,4 @@
-export const SEASON = '2022-2023';
+export const SEASON = '2023-2024';
 
 enum Location {
   GymnaseRV = 'GymnaseRV',
@@ -55,7 +55,7 @@ interface Time {
 }
 
 export const MIDDAY_POSITION = -1;
-export const ROWS_COUNT = 20;
+export const ROWS_COUNT = 17;
 
 export const TIMES: Record<string, Time[]> = {
   Lundi: [
@@ -82,7 +82,7 @@ export const TIMES: Record<string, Time[]> = {
       from: '16:30',
       to: '17:15',
       duration: 0.75,
-      start: 1,
+      start: 2,
       section: Section.Kids,
       location: Location.GymnaseAB,
     },
@@ -90,7 +90,7 @@ export const TIMES: Record<string, Time[]> = {
       from: '17:15',
       to: '18:00',
       duration: 0.75,
-      start: 4,
+      start: 5,
       section: Section.Teens,
       location: Location.GymnaseAB,
     },
@@ -98,18 +98,19 @@ export const TIMES: Record<string, Time[]> = {
       from: '19:30',
       to: '21:00',
       duration: 1.5,
-      start: 11,
+      start: 10,
       section: Section.TeensAdult,
       location: Location.DojangKM,
     },
   ],
   Jeudi: [],
-  Vendredi: [
+  'Vendr.': [],
+  Samedi: [
     {
-      from: '20:30',
-      to: '22:00',
+      from: '10:00',
+      to: '11:30',
       duration: 1.5,
-      start: 14,
+      start: 1,
       section: Section.TeensAdult,
       location: Location.DojangKM,
     },
