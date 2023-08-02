@@ -43,14 +43,14 @@ function Inscription() {
             enfant&nbsp;:
           </p>
           <ul>
-            {/* <li>
+            <li>
               <a
                 href={`depliant_${SEASON}.pdf`}
                 download={`Dépliant ${SEASON} - Fontaine Taekwon-Do.pdf`}
               >
-                Dépliant (PDF)
+                Dépliant {SEASON} (PDF)
               </a>
-            </li> */}
+            </li>
             <li>
               <a
                 href={`https://framaforms.org/adhesion-enfantado-${SEASON.replace(
