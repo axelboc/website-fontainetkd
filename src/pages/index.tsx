@@ -3,7 +3,6 @@ import '../styles/index.css';
 import type { PageProps } from 'gatsby';
 import { graphql } from 'gatsby';
 import type { IGatsbyImageData } from 'gatsby-plugin-image';
-import PropTypes from 'prop-types';
 
 import Banner from '../components/Banner';
 import Cotisation from '../components/Cotisation';
@@ -43,10 +42,6 @@ function IndexPage(props: PageProps<IndexData>) {
     </div>
   );
 }
-
-IndexPage.propTypes = {
-  data: PropTypes.object.isRequired,
-};
 
 export const query = graphql`
   query {
