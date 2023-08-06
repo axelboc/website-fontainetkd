@@ -14,14 +14,7 @@ module.exports = {
       options: {
         postCssPlugins: [
           postcssImport(),
-          postcssPresetEnv({
-            features: {
-              'nesting-rules': true,
-              'custom-properties': {
-                importFrom: 'src/styles/vars.css',
-              },
-            },
-          }),
+          postcssPresetEnv({ features: { 'nesting-rules': true } }),
           postcssBrowserReporter(),
           postcssReporter(),
         ],
