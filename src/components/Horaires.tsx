@@ -74,7 +74,7 @@ function Horaires() {
                         <FiExternalLink className={styles.externalIcon} />
                       </span>
                     </a>
-                  )
+                  ),
                 )}
               </Fragment>
             ))}

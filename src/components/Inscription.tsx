@@ -55,7 +55,7 @@ function Inscription() {
               <a
                 href={`https://framaforms.org/adhesion-enfantado-${SEASON.replace(
                   '-',
-                  ''
+                  '',
                 )}-1659891235`}
                 target="_blank"
                 rel="noreferrer"
@@ -67,7 +67,7 @@ function Inscription() {
               <a
                 href={`https://framaforms.org/adhesion-adulte-${SEASON.replace(
                   '-',
-                  ''
+                  '',
                 )}-1657976478`}
                 target="_blank"
                 rel="noreferrer"

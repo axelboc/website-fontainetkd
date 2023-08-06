@@ -16,7 +16,7 @@ function Nav() {
           offset: 48,
           updateURL: false,
         });
-      }
+      },
     );
 
     return () => {

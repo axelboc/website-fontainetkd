@@ -27,13 +27,15 @@
 
 @font-face {
   font-family: 'Areno';
-  src: url('../assets/areno.woff2') format('woff2'),
+  src:
+    url('../assets/areno.woff2') format('woff2'),
     url('../assets/areno.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Areno Rough';
-  src: url('../assets/areno-rough-subset.woff2') format('woff2'),
+  src:
+    url('../assets/areno-rough-subset.woff2') format('woff2'),
     url('../assets/areno-rough-subset.woff') format('woff');
 }
 
