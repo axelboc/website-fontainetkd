@@ -1,6 +1,6 @@
-import { SEASON } from '../data';
 import Heading from './Heading';
 import * as styles from './Inscription.module.css';
+import { SEASON } from '../data';
 
 function Inscription() {
   return (

@@ -1,4 +1,3 @@
-import Logo from '../assets/fontaine-taekwondo.svg';
 import {
   header,
   inner,
@@ -7,6 +6,7 @@ import {
   title,
   intro,
 } from './Banner.module.css';
+import Logo from '../assets/fontaine-taekwondo.svg';
 
 function Banner() {
   return (

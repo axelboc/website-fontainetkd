@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import type SmoothScroll from 'smooth-scroll';
 
-import Falcon from '../assets/falcon.svg';
 import { sticky, nav, topLink, item, link } from './Nav.module.css';
+import Falcon from '../assets/falcon.svg';
 
 function Nav() {
   useEffect(() => {

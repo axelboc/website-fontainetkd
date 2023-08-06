@@ -1,6 +1,7 @@
 import '../styles/index.css';
 
-import { graphql, PageProps } from 'gatsby';
+import type { PageProps } from 'gatsby';
+import { graphql } from 'gatsby';
 import type { IGatsbyImageData } from 'gatsby-plugin-image';
 import PropTypes from 'prop-types';
 
@@ -31,7 +32,7 @@ function IndexPage(props: PageProps<IndexData>) {
       <main>
         <Sections
           photo1={data.photo1.childImageSharp.gatsbyImageData}
-          photo2={data.photo2.childImageSharp.gatsbyImageData}
+          // photo2={data.photo2.childImageSharp.gatsbyImageData}
           photo3={data.photo3.childImageSharp.gatsbyImageData}
         />
         <Horaires />

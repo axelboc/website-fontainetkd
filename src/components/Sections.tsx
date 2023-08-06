@@ -1,4 +1,5 @@
-import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image';
+import type { IGatsbyImageData } from 'gatsby-plugin-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import {
   FiCalendar,
   FiCheckCircle,
@@ -12,7 +13,7 @@ import { content, list, icon, imgWrap, img } from './Sections.module.css';
 
 export interface SectionPhotos {
   photo1: IGatsbyImageData;
-  photo2: IGatsbyImageData;
+  // photo2: IGatsbyImageData;
   photo3: IGatsbyImageData;
 }
 

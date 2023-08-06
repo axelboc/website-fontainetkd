@@ -1,9 +1,10 @@
-import { CSSProperties, Fragment } from 'react';
+import type { CSSProperties } from 'react';
+import { Fragment } from 'react';
 import { FiExternalLink } from 'react-icons/fi';
 
-import { LOCATIONS, MIDDAY_POSITION, ROWS_COUNT, SEASON, TIMES } from '../data';
 import Heading from './Heading';
 import * as styles from './Horaires.module.css';
+import { LOCATIONS, MIDDAY_POSITION, ROWS_COUNT, SEASON, TIMES } from '../data';
 
 function Horaires() {
   const gridTemplateColumns = Object.values(TIMES)
@@ -13,7 +14,7 @@ function Horaires() {
   return (
     <section
       className={styles.root}
-      style={{ '--rows': ROWS_COUNT } as CSSProperties}
+      style={{ '--rows': ROWS_COUNT } as CSSProperties} // eslint-disable-line @typescript-eslint/consistent-type-assertions
     >
       <div id="horaires" className={styles.inner}>
         <Heading>Créneaux {SEASON.replace('-', ' / ')}</Heading>

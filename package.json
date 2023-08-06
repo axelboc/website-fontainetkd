@@ -18,7 +18,7 @@
     "build": "gatsby build",
     "build:local": "set NODE_ENV=development && yarn build && yarn serve",
     "build:prod": "set NODE_ENV=production && yarn build && yarn serve",
-    "serve": "gatsby serve -p 8000",
+    "serve": "gatsby serve -p 8000 -o",
     "lint": "run-p lint:*",
     "lint:js": "eslint \"**/*.{js,jsx,ts,tsx}\" --max-warnings=0",
     "lint:tsc": "tsc",
@@ -60,6 +60,6 @@
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-standard": "^22.0.0",
     "stylelint-order": "^4.1.0",
-    "typescript": "^4.3.5"
+    "typescript": "5.1.6"
   }
 }
