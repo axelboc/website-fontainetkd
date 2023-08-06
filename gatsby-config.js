@@ -38,7 +38,6 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     'gatsby-plugin-react-svg',
-    'gatsby-plugin-react-helmet',
     'gatsby-plugin-nprogress',
     'gatsby-plugin-sitemap',
   ],

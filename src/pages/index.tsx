@@ -47,7 +47,6 @@ IndexPage.propTypes = {
   data: PropTypes.object.isRequired,
 };
 
-// eslint-disable-next-line @typescript-eslint/no-confusing-void-expression
 export const query = graphql`
   query {
     photo1: file(relativePath: { eq: "photo1.jpg" }) {
@@ -67,5 +66,7 @@ export const query = graphql`
     }
   }
 `;
+
+export { default as Head } from '../components/Meta';
 
 export default IndexPage;

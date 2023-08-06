@@ -1,5 +1,3 @@
-import { Helmet } from 'react-helmet';
-
 import logo from '../assets/fontaine-taekwondo-logo.png';
 
 const TITLE = 'Fontaine Taekwon-Do';
@@ -10,7 +8,7 @@ const DESCRIPTION =
 
 function Meta() {
   return (
-    <Helmet>
+    <>
       <html lang="fr" />
       <title>
         {TITLE} · {SUBTITLE}
@@ -38,7 +36,7 @@ function Meta() {
       <meta property="og:url" content="https://fontainetkd.fr" />
       <meta property="og:locale" content="fr_FR" />
       <meta name="twitter:card" content="summary_large_image" />
-    </Helmet>
+    </>
   );
 }
 
