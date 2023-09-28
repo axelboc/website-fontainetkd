@@ -58,7 +58,7 @@ function Inscription() {
                   '',
                 )}-1659891235`}
                 target="_blank"
-                rel="noreferrer"
+                rel="noreferrer nofollow"
               >
                 Formulaire d’adhésion ENFANT/ADO (en ligne)
               </a>
@@ -70,7 +70,7 @@ function Inscription() {
                   '',
                 )}-1657976478`}
                 target="_blank"
-                rel="noreferrer"
+                rel="noreferrer nofollow"
               >
                 Formulaire d’adhésion ADULTE (en ligne)
               </a>
@@ -79,6 +79,7 @@ function Inscription() {
               <a
                 href={`aide_${SEASON}.pdf`}
                 download={`Aide à l'adhésion ${SEASON} - Ville de Fontaine.pdf`}
+                rel="nofollow"
               >
                 Formulaire d’aide à l’adhésion (PDF)
               </a>
