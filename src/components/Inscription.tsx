@@ -96,7 +96,7 @@ function Inscription() {
           <ul>
             <li>
               <strong>Virement bancaire</strong>{' '}
-              <small>&ndash; méthode préferée</small>
+              <small>&ndash; recommandé</small>
               <small className={styles.extra}>
                 Titulaire : FONTAINE TAEKWON-DO
                 <br />
