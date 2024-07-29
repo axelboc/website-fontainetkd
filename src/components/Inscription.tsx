@@ -6,7 +6,7 @@ function Inscription() {
   return (
     <section id="inscription" className={styles.root}>
       <Heading>Inscription</Heading>
-      <div className={styles.inner}>
+      <div className={styles.sections}>
         <section className={styles.section}>
           <h3>Première adhésion</h3>
           <p>

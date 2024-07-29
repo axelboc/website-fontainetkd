@@ -1,7 +1,16 @@
+.root {
+  composes: separator from global;
+}
+
+.section:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 .list {
   margin-bottom: 0;
   padding: 1.5rem 1.5rem 1rem;
   list-style: none;
+  background-color: white;
 }
 
 .list > li {
@@ -21,6 +30,10 @@
 }
 
 @media (width >= 50em) {
+  .section:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
   .content {
     display: flex;
   }

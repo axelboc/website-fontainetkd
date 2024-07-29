@@ -1,7 +1,6 @@
 .root {
   composes: separator from global;
   background-color: var(--minsk);
-
   --cols: 6;
 }
 
@@ -16,7 +15,7 @@
 .day {
   composes: heading from global;
   color: var(--candlelight);
-  font-size: 180%;
+  font-size: 160%;
 }
 
 .day[data-empty='true'] {
@@ -115,6 +114,10 @@
     padding-right: 2rem;
     padding-left: 2rem;
   }
+
+  .day {
+    font-size: 180%;
+  }
 }
 
 @media (width < 35em) {
@@ -123,7 +126,19 @@
   }
 }
 
-@media (width < 65em) {
+@media (50em <= width < 70em) {
+  .root {
+    max-width: 45em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .entry {
+    max-width: 30em;
+  }
+}
+
+@media (width < 70em) {
   .day,
   .entry {
     margin-bottom: 1rem;
@@ -141,7 +156,6 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    max-width: 30em;
     padding-right: 1.5rem;
     padding-left: 1.5rem;
   }
@@ -165,17 +179,11 @@
   }
 }
 
-@media (width >= 65em) {
-  .inner {
-    max-width: 75rem;
-    margin: 0 auto;
-    padding: 2rem 0 4rem;
-  }
-
+@media (width >= 70em) {
   .content {
     position: relative;
     z-index: 0;
-    padding: 1.5rem 2rem 0;
+    padding: 2rem 2rem 1rem;
   }
 
   .contentInner {

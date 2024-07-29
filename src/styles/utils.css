@@ -53,18 +53,12 @@
   text-transform: uppercase;
 }
 
-.separator::before {
-  display: block;
-  height: 4.375rem;
-  color: var(--candlelight);
-  background-color: currentColor;
-  content: '';
+.separator {
+  margin-top: 2.5rem;
+}
 
-  /* background: repeating-linear-gradient(
-    calc(85deg - var(--skew-angle)),
-    transparent -20px,
-    transparent 0,
-    currentColor 0,
-    currentColor calc(-20px + 2 * 20px)
-  ); */
+@media (width >= 80em) {
+  .separator {
+    margin-top: 4.375rem;
+  }
 }

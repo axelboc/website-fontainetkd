@@ -4,6 +4,7 @@ import type { PageProps } from 'gatsby';
 import { graphql } from 'gatsby';
 import type { IGatsbyImageData } from 'gatsby-plugin-image';
 
+import { main, wrapper } from './index.module.css';
 import Banner from '../components/Banner';
 import Cotisation from '../components/Cotisation';
 import Footer from '../components/Footer';
@@ -28,17 +29,19 @@ function IndexPage(props: PageProps<IndexData>) {
       <NewsBar />
       <Banner />
       <Nav />
-      <main>
-        <Sections
-          photoKids={data.photoKids.childImageSharp.gatsbyImageData}
-          photoTeens={data.photoTeens.childImageSharp.gatsbyImageData}
-          photoAdults={data.photoAdults.childImageSharp.gatsbyImageData}
-        />
-        <Horaires />
-        <Cotisation />
-      </main>
-      <Inscription />
-      <Footer />
+      <div className={wrapper}>
+        <main className={main}>
+          <Sections
+            photoKids={data.photoKids.childImageSharp.gatsbyImageData}
+            photoTeens={data.photoTeens.childImageSharp.gatsbyImageData}
+            photoAdults={data.photoAdults.childImageSharp.gatsbyImageData}
+          />
+          <Horaires />
+          <Cotisation />
+          <Inscription />
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 }

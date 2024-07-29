@@ -10,7 +10,15 @@ import {
 } from 'react-icons/fi';
 
 import Heading from './Heading';
-import { content, list, icon, imgWrap, img } from './Sections.module.css';
+import {
+  root,
+  content,
+  list,
+  icon,
+  imgWrap,
+  img,
+  section,
+} from './Sections.module.css';
 
 export interface SectionPhotos {
   photoKids: IGatsbyImageData;
@@ -22,8 +30,8 @@ function Sections(props: SectionPhotos) {
   const { photoKids, photoTeens, photoAdults } = props;
 
   return (
-    <div id="sections">
-      <article>
+    <div id="sections" className={root}>
+      <article className={section}>
         <Heading sub="de 6 à 9 ans">Section enfant</Heading>
         <div className={content}>
           <ul className={list}>
@@ -48,7 +56,7 @@ function Sections(props: SectionPhotos) {
           </div>
         </div>
       </article>
-      <article>
+      <article className={section}>
         <Heading sub="de 9 à 15 ans">Section ado</Heading>
         <div className={content}>
           <ul className={list}>
@@ -74,7 +82,7 @@ function Sections(props: SectionPhotos) {
           </div>
         </div>
       </article>
-      <article>
+      <article className={section}>
         <Heading sub="à partir de 16 ans">Section adulte</Heading>
         <div className={content}>
           <ul className={list}>
@@ -103,7 +111,7 @@ function Sections(props: SectionPhotos) {
           </div>
         </div>
       </article>
-      {/* <article>
+      {/* <article className={section}>
         <Heading sub="à partir de 16 ans">Fight Fitness</Heading>
         <div className={content}>
           <ul className={list}>

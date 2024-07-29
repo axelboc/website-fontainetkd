@@ -1,0 +1,21 @@
+.wrapper {
+  background-color: var(--lochmara);
+}
+
+.main {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+@media (width >= 40em) {
+  .main {
+    margin: 0 2rem;
+  }
+}
+
+@media (width >= 95em) {
+  .main {
+    max-width: 85rem;
+    margin: 0 auto;
+  }
+}
