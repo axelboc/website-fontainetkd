@@ -40,6 +40,7 @@ enum Section {
   Kids = 'Enfants',
   Teens = 'Ados',
   TeensAdult = 'Ados / Adultes',
+  Adults = 'Adultes',
   FightFitness = 'Fight Fitness',
   SummerFitness = 'Été Fitness',
 }
@@ -99,7 +100,7 @@ export const TIMES: Record<string, Time[]> = {
       to: '21:00',
       duration: 1.5,
       start: 11,
-      section: Section.TeensAdult,
+      section: Section.Adults,
       location: Location.DojangKM,
     },
   ],

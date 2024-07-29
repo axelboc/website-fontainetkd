@@ -29,7 +29,7 @@ function Sections(props: SectionPhotos) {
               <FiSmile className={icon} /> Initiation ludique au Taekwon‑Do
             </li>
             <li>
-              <FiCalendar className={icon} /> Deux séances de 45&nbsp;min
+              <FiCalendar className={icon} /> Deux séances de 45&nbsp;min à 1h
               par&nbsp;semaine
             </li>
             <li>

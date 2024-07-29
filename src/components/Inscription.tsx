@@ -20,8 +20,8 @@ function Inscription() {
             enfant, ainsi que pour régler la cotisation.
           </p>
           <p>
-            Pour les séances d’essai, prévoir une tenue de sport, une gourde et
-            des tongs.
+            Pour les séances d’essai, prévoyez simplement une tenue de sport,
+            une gourde et des tongs.
           </p>
           <p>
             Une question ?{' '}
@@ -86,17 +86,17 @@ function Inscription() {
             </li>
           </ul>
           <p>
-            Dans le cas d’une adhésion familiale, remplir d’abord son propre
-            formulaire avant ceux de ses enfants.
+            Dans le cas d’une adhésion familiale, remplissez d’abord votre
+            propre formulaire avant ceux de vos enfants.
           </p>
           <p>
             Une fois l’adhésion <strong>validée par le Bureau</strong> par SMS
-            ou WhatsApp, procéder au réglement de la cotisation&nbsp;:
+            ou WhatsApp, procédez au réglement de la cotisation&nbsp;:
           </p>
           <ul>
             <li>
               <strong>Virement bancaire</strong>{' '}
-              <small>&ndash; recommandé</small>
+              <small>&ndash; méthode préferée</small>
               <small className={styles.extra}>
                 Titulaire : FONTAINE TAEKWON-DO
                 <br />
