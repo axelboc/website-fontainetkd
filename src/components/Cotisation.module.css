@@ -18,7 +18,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 0.75rem;
-  padding: 1.25rem 1.5rem 1rem 1.5rem;
+  padding: 1.25rem 1.5rem 1rem;
   background-color: black;
 }
 
@@ -82,8 +82,8 @@
 @media (45em <= width < 65em) {
   .root {
     max-width: 45em;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
   }
 
   .fees > p {
@@ -102,8 +102,8 @@
   }
 
   .list {
-    padding-left: 2rem;
     padding-right: 2rem;
+    padding-left: 2rem;
   }
 }
 

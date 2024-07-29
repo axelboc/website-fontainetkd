@@ -1,14 +1,14 @@
 .root {
   composes: separator from global;
   max-width: 45em;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 }
 
 .sections {
   padding: 0 1.5rem 1.125rem;
-  background-color: white;
   overflow: hidden;
+  background-color: white;
 }
 
 .section > h3 {

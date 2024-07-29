@@ -1,4 +1,4 @@
-export const SEASON = '2023-2024';
+export const SEASON = '2024-2025';
 
 enum Location {
   GymnaseRV = 'GymnaseRV',
