@@ -6,6 +6,7 @@ import {
   FiCreditCard,
   FiMessageCircle,
   FiSmile,
+  FiStar,
 } from 'react-icons/fi';
 
 import Heading from './Heading';
@@ -14,10 +15,11 @@ import { content, list, icon, imgWrap, img } from './Sections.module.css';
 export interface SectionPhotos {
   photoKids: IGatsbyImageData;
   photoAdults: IGatsbyImageData;
+  photoTeens: IGatsbyImageData;
 }
 
 function Sections(props: SectionPhotos) {
-  const { photoKids, photoAdults } = props;
+  const { photoKids, photoTeens, photoAdults } = props;
 
   return (
     <div id="sections">
@@ -29,20 +31,16 @@ function Sections(props: SectionPhotos) {
               <FiSmile className={icon} /> Initiation ludique au Taekwon‑Do
             </li>
             <li>
+              <FiCheckCircle className={icon} /> Développe la coordination,
+              l’attention, la confiance en&nbsp;soi&hellip;
+            </li>
+            <li>
               <FiCalendar className={icon} /> Deux séances de 45&nbsp;min à 1h
               par&nbsp;semaine
             </li>
             <li>
-              <FiCheckCircle className={icon} /> Développe la coordination,
-              l’attention, la confiance en&nbsp;soi,&nbsp;etc.
-            </li>
-            <li>
               <FiCreditCard className={icon} /> Cotisation annuelle unique de
               120&nbsp;€, uniforme&nbsp;inclus&nbsp;!
-            </li>
-            <li>
-              <FiMessageCircle className={icon} /> Cours bilingues
-              français/anglais
             </li>
           </ul>
           <div className={imgWrap}>
@@ -51,7 +49,33 @@ function Sections(props: SectionPhotos) {
         </div>
       </article>
       <article>
-        <Heading sub="à partir de 9 ans">Section ado / adulte</Heading>
+        <Heading sub="de 9 à 15 ans">Section ado</Heading>
+        <div className={content}>
+          <ul className={list}>
+            <li>
+              <FiCheckCircle className={icon} /> Pratique complète : combat,
+              formes, self-défense, casse&hellip;
+            </li>
+            <li>
+              <FiCalendar className={icon} /> Deux séances par semaine dont une
+              avec les adultes
+            </li>
+            <li>
+              <FiStar className={icon} /> Une séance supplémentaire chaque 1
+              <sup>er</sup> samedi du mois
+            </li>
+            <li>
+              <FiCreditCard className={icon} /> Cotisation annuelle unique de
+              150&nbsp;€, uniforme&nbsp;inclus&nbsp;!
+            </li>
+          </ul>
+          <div className={imgWrap}>
+            <GatsbyImage className={img} image={photoTeens} alt="" />
+          </div>
+        </div>
+      </article>
+      <article>
+        <Heading sub="à partir de 16 ans">Section adulte</Heading>
         <div className={content}>
           <ul className={list}>
             <li>
@@ -59,12 +83,11 @@ function Sections(props: SectionPhotos) {
               de&nbsp;fitness
             </li>
             <li>
-              <FiCalendar className={icon} /> Deux séances par&nbsp;semaine dont
-              une réservée aux&nbsp;ados (9-18)
+              <FiCheckCircle className={icon} /> Pratique complète : combat,
+              formes, self-défense, casse&hellip;
             </li>
             <li>
-              <FiCheckCircle className={icon} /> Pratique complète : combat,
-              formes, self-défense, casse,&nbsp;etc.
+              <FiCalendar className={icon} /> Deux à trois séances par semaine
             </li>
             <li>
               <FiCreditCard className={icon} /> Cotisation annuelle unique de
