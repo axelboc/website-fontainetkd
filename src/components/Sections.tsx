@@ -12,13 +12,12 @@ import Heading from './Heading';
 import { content, list, icon, imgWrap, img } from './Sections.module.css';
 
 export interface SectionPhotos {
-  photo1: IGatsbyImageData;
-  // photo2: IGatsbyImageData;
-  photo3: IGatsbyImageData;
+  photoKids: IGatsbyImageData;
+  photoAdults: IGatsbyImageData;
 }
 
 function Sections(props: SectionPhotos) {
-  const { photo1, photo3 } = props;
+  const { photoKids, photoAdults } = props;
 
   return (
     <div id="sections">
@@ -47,7 +46,7 @@ function Sections(props: SectionPhotos) {
             </li>
           </ul>
           <div className={imgWrap}>
-            <GatsbyImage className={img} image={photo1} alt="" />
+            <GatsbyImage className={img} image={photoKids} alt="" />
           </div>
         </div>
       </article>
@@ -60,8 +59,8 @@ function Sections(props: SectionPhotos) {
               de&nbsp;fitness
             </li>
             <li>
-              <FiCalendar className={icon} /> Trois séances par&nbsp;semaine
-              dont une réservée aux&nbsp;ados (9-18)
+              <FiCalendar className={icon} /> Deux séances par&nbsp;semaine dont
+              une réservée aux&nbsp;ados (9-18)
             </li>
             <li>
               <FiCheckCircle className={icon} /> Pratique complète : combat,
@@ -77,7 +76,7 @@ function Sections(props: SectionPhotos) {
             </li>
           </ul>
           <div className={imgWrap}>
-            <GatsbyImage className={img} image={photo3} alt="" />
+            <GatsbyImage className={img} image={photoAdults} alt="" />
           </div>
         </div>
       </article>

@@ -20,8 +20,8 @@ function Inscription() {
             enfant, ainsi que pour régler la cotisation.
           </p>
           <p>
-            Pour les séances d’essai, porter une tenue de sport et apporter une
-            gourde et des tongs.
+            Pour les séances d’essai, prévoir une tenue de sport, une gourde et
+            des tongs.
           </p>
           <p>
             Une question ?{' '}
