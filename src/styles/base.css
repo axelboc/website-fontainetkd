@@ -53,7 +53,7 @@ img {
 a {
   color: var(--minsk);
   font-weight: 600;
-  outline-color: currentColor;
+  outline-color: currentcolor;
 
   &:hover,
   &:focus {

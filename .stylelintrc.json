@@ -1,23 +1,16 @@
 {
-  "extends": [
-    "stylelint-config-standard",
-    "stylelint-config-prettier",
-    "stylelint-config-rational-order"
-  ],
+  "extends": ["stylelint-config-standard", "stylelint-config-rational-order"],
   "rules": {
     "color-named": "always-where-possible",
-    "declaration-block-no-redundant-longhand-properties": true,
+    "declaration-property-value-no-unknown": true,
     "font-family-name-quotes": "always-unless-keyword",
     "font-weight-notation": "named-where-possible",
-    "function-calc-no-invalid": true,
     "function-url-no-scheme-relative": true,
-    "function-url-quotes": "always",
-    "shorthand-property-no-redundant-values": true,
-    "unit-no-unknown": [
-      true,
-      {
-        "ignoreFunctions": ["image-set"]
-      }
-    ]
+    "import-notation": "string",
+    "length-zero-no-unit": true,
+    "media-feature-name-value-no-unknown": true,
+    "no-unknown-animations": true,
+    "no-unknown-custom-media": true,
+    "selector-class-pattern": "[a-z]+([A-Z][a-z]*)*"
   }
 }
