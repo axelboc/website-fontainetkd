@@ -65,8 +65,8 @@ function Sections(props: SectionPhotos) {
               formes, self-défense, casse&hellip;
             </li>
             <li>
-              <FiCalendar className={icon} /> Deux séances par semaine dont une
-              avec les adultes
+              <FiCalendar className={icon} /> Une à deux séances par semaine en
+              fonction du niveau
             </li>
             <li>
               <FiStar className={icon} /> Une séance supplémentaire chaque 1

@@ -36,21 +36,12 @@ export const LOCATIONS: Record<Location, LocationInfo> = {
   },
 };
 
-enum Section {
-  Kids = 'Enfants',
-  Teens = 'Ados',
-  TeensAdult = 'Ados / Adultes',
-  Adults = 'Adultes',
-  FightFitness = 'Fight Fitness',
-  SummerFitness = 'Été Fitness',
-}
-
 interface Time {
   from: string;
   to: string;
   duration: number;
   start: number;
-  section: Section;
+  section: string;
   location: Location;
   variant?: string;
 }
@@ -65,7 +56,7 @@ export const TIMES: Record<string, Time[]> = {
       to: '18:00',
       duration: 0.75,
       start: 4,
-      section: Section.Kids,
+      section: 'Enfants',
       location: Location.GymnaseAB,
     },
     {
@@ -73,7 +64,7 @@ export const TIMES: Record<string, Time[]> = {
       to: '19:30',
       duration: 1.5,
       start: 7,
-      section: Section.TeensAdult,
+      section: 'Adultes / Ados confirmés',
       location: Location.GymnaseAB,
     },
   ],
@@ -84,7 +75,7 @@ export const TIMES: Record<string, Time[]> = {
       to: '17:00',
       duration: 1,
       start: 2,
-      section: Section.Kids,
+      section: 'Enfants',
       location: Location.GymnaseAB,
     },
     {
@@ -92,7 +83,7 @@ export const TIMES: Record<string, Time[]> = {
       to: '18:00',
       duration: 1,
       start: 6,
-      section: Section.Teens,
+      section: 'Ados',
       location: Location.GymnaseAB,
     },
     {
@@ -100,7 +91,7 @@ export const TIMES: Record<string, Time[]> = {
       to: '21:00',
       duration: 1.5,
       start: 11,
-      section: Section.Adults,
+      section: 'Adultes',
       location: Location.DojangKM,
     },
   ],
@@ -112,7 +103,7 @@ export const TIMES: Record<string, Time[]> = {
       to: '11:30',
       duration: 1.5,
       start: 1,
-      section: Section.TeensAdult,
+      section: 'Ados / Adultes',
       location: Location.DojangKM,
     },
   ],
