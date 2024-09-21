@@ -4,10 +4,9 @@ function NewsBar() {
   return (
     <div className={bar}>
       <p className={message}>
-        Rendez-vous <strong>samedi 7 septembre</strong> au{' '}
-        <em>Forum des Sports et de la Vie Associative</em>,
-        parc&nbsp;de&nbsp;la&nbsp;Poya. D’ici là, bonnes vacances
-        à&nbsp;tous&nbsp;!
+        Les inscriptions pour les enfants de <strong>6-9 ans</strong> sont{' '}
+        <strong>fermées</strong>. Nous ouvrirons peut-être de nouvelles places
+        en janvier.
       </p>
     </div>
   );
