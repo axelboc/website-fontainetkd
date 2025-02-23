@@ -4,9 +4,8 @@ function NewsBar() {
   return (
     <div className={bar}>
       <p className={message}>
-        Les inscriptions pour les enfants de <strong>6-9 ans</strong> sont{' '}
-        <strong>fermées</strong>. Nous ouvrirons peut-être de nouvelles places
-        en janvier.
+        Les créneaux enfant 6‑9 ans sont complets, mais les autres créneaux
+        restent ouverts (4‑5 ans, ados et adultes).
       </p>
     </div>
   );
