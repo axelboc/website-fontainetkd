@@ -1,15 +1,34 @@
 .root {
   composes: separator from global;
   padding: 2.25rem 1.5rem;
-  font-size: 112.5%;
   text-align: center;
   background-color: var(--candlelight);
 }
 
-.root > p:last-child {
-  margin-bottom: 0.25rem;
+.socialMedia {
+  margin-bottom: 1.75rem;
+  font-size: 112.5%;
 }
 
 .icon {
   margin: 0 1rem -0.125em;
+}
+
+.iftLink {
+  display: inline-flex;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 0.5em;
+}
+
+.itfLogo {
+  width: 16em;
+  max-width: 100%;
+}
+
+.localFeds {
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 75%;
 }
