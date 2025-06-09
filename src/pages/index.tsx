@@ -12,7 +12,7 @@ import Horaires from '../components/Horaires';
 import Inscription from '../components/Inscription';
 import Meta from '../components/Meta';
 import Nav from '../components/Nav';
-import NewsBar from '../components/NewsBar';
+// import NewsBar from '../components/NewsBar';
 import Sections from '../components/Sections';
 
 type IndexData = Record<
@@ -26,7 +26,7 @@ function IndexPage(props: PageProps<IndexData>) {
   return (
     <div id="top">
       <Meta />
-      <NewsBar />
+      {/* <NewsBar /> */}
       <Banner />
       <Nav />
       <div className={wrapper}>
