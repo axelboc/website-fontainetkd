@@ -31,7 +31,7 @@
 .price {
   color: white;
   font-weight: bold;
-  font-size: 300%;
+  font-size: 260%;
   font-family: var(--font-monospace);
   line-height: 1.1;
 }
@@ -73,13 +73,7 @@
   margin-bottom: 1.5rem;
 }
 
-@media (width >= 30em) {
-  .age {
-    font-size: 180%;
-  }
-}
-
-@media (45em <= width < 65em) {
+@media (30em <= width < 65em) {
   .root {
     max-width: 45em;
     margin-right: auto;
@@ -94,6 +88,7 @@
 
   .age {
     flex: 1 1 0%;
+    font-size: 180%;
   }
 
   .price {
