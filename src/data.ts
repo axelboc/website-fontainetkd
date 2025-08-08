@@ -1,4 +1,5 @@
-export const SEASON = '2024-2025';
+export const SEASON = '2025-2026';
+export const EMAIL = 'asf.taekwondo@gmail.com';
 
 enum Location {
   GymnaseRV = 'GymnaseRV',

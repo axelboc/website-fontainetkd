@@ -4,7 +4,6 @@ import {
   root,
   socialMedia,
   icon,
-  federations,
   iftLink,
   itfLogo,
   localFeds,
@@ -21,7 +20,7 @@ function Footer() {
         &nbsp;et&nbsp;
         <a href="https://www.instagram.com/fontainetkd/">Instagram</a>
       </p>
-      <div className={federations}>
+      <div>
         <a
           className={iftLink}
           href="https://itftkd.sport/"
