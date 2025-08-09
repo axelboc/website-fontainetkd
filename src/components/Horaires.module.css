@@ -1,8 +1,6 @@
 .root {
   composes: separator from global;
   background-color: var(--minsk);
-
-  --cols: 6;
 }
 
 .inner {
@@ -15,12 +13,13 @@
 
 .day {
   composes: heading from global;
+  margin-bottom: 1rem;
   color: var(--candlelight);
   font-size: 160%;
 }
 
-.day[data-empty='true'] {
-  opacity: 0.5;
+.day:not(:first-child) {
+  margin-top: 1.5rem;
 }
 
 .day > sup {
@@ -29,8 +28,10 @@
 
 .entry {
   composes: link-reset from global;
-  padding: 1rem 0.5rem;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  padding: 1rem 1.5rem;
   background-color: white;
   border-radius: 0.25rem;
   outline-color: white;
@@ -49,28 +50,52 @@
 
 .time {
   display: flex;
+  margin-right: 1rem;
+  margin-bottom: 0.125rem;
   color: var(--lochmara);
   font-weight: bold;
-  font-size: 90%;
 }
 
 .time > span {
   padding: 0 0.25em;
 }
 
-.section {
+.groups {
+  margin-bottom: 0.5rem;
+}
+
+.frequency {
   display: block;
-  margin-bottom: 0.125rem;
+  margin-bottom: -0.125em;
   font-weight: 600;
-  font-size: 115%;
-  line-height: 1.3;
+  font-size: 90%;
+  font-style: italic;
+}
+
+.sections {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.sections:not(:last-child) {
+  margin-bottom: 0.375rem;
+}
+
+.section {
+  display: inline-flex;
+  margin-right: 0.25em;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.section:first-child {
+  font-size: 120%;
 }
 
 .location {
   display: flex;
   align-items: center;
-  margin-bottom: 0.125rem;
-  font-size: 90%;
 }
 
 .entry:hover .location {
@@ -89,26 +114,9 @@
   opacity: 1;
 }
 
-.announcement {
-  display: flex;
-  align-items: center;
-  margin: 2.5rem 0 1.5rem;
-  padding: 1rem;
-  background-color: var(--candlelight);
-}
-
-.announcementIcon {
-  flex: none;
-  margin-right: 1.5rem;
-  font-size: 2rem;
-}
-
-.announcement p {
-  margin-bottom: 0.125rem;
-}
-
-.announcement a {
-  color: inherit;
+.asterisk {
+  margin: 1.5rem 0 0;
+  color: white;
 }
 
 @media (width >= 30em) {
@@ -122,13 +130,7 @@
   }
 }
 
-@media (width < 35em) {
-  .location {
-    flex-basis: 100%;
-  }
-}
-
-@media (50em <= width < 70em) {
+@media (width >= 55em) {
   .root {
     max-width: 45em;
     margin-right: auto;
@@ -136,112 +138,22 @@
   }
 
   .entry {
-    max-width: 30em;
-  }
-}
-
-@media (width < 70em) {
-  .day,
-  .entry {
-    margin-bottom: 1rem;
+    flex-flow: row wrap;
+    align-items: flex-start;
   }
 
-  .day:not(:first-child) {
-    margin-top: 1.5rem;
-  }
-
-  .day[data-empty='true'] {
-    display: none;
-  }
-
-  .entry {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
-  }
-
-  .dayBorder {
-    display: none;
-  }
-
-  .time,
-  .location {
-    font-size: 100%;
-  }
-
-  .section {
+  .time {
+    margin-bottom: 0;
+    font-weight: 600;
     font-size: 120%;
   }
 
-  .time,
-  .section {
-    margin-right: 1rem;
-  }
-}
-
-@media (width >= 70em) {
-  .content {
-    position: relative;
-    z-index: 0;
-    padding: 2rem 2rem 1rem;
+  .groups {
+    flex: 1;
+    margin-bottom: 0;
   }
 
-  .contentInner {
-    display: grid;
-    grid-auto-rows: minmax(1.5rem, auto);
-    grid-gap: 1rem 2rem;
-  }
-
-  .day {
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-
-  .ofMonth {
-    display: block;
-    font-size: 75%;
-  }
-
-  .dayBorder {
-    grid-row: 1 / span var(--rows);
-    margin-left: -1rem;
-    border-left: 2px solid white;
-  }
-
-  .entry {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-  .time,
   .location {
-    justify-content: center;
-  }
-
-  .externalIcon {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    font-size: 80%;
-  }
-
-  .midday {
-    z-index: -1;
-    grid-column: 1 / span var(--cols);
-    background-color: var(--lochmara);
-  }
-
-  .announcement {
-    margin: 1.5rem 0 0;
-  }
-
-  .announcementIcon {
-    font-size: 4rem;
+    line-height: calc(1.5 * 1.2); /* body line-height * section font-size */
   }
 }

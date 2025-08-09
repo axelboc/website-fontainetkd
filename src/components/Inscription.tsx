@@ -2,12 +2,12 @@ import { FiUserPlus } from 'react-icons/fi';
 
 import Heading from './Heading';
 import * as styles from './Inscription.module.css';
-import { EMAIL, SEASON } from '../data';
+import { EMAIL, SEASON, SEASON_SLASH } from '../data';
 
 function Inscription() {
   return (
     <section id="inscription" className={styles.root}>
-      <Heading>Inscription {SEASON}</Heading>
+      <Heading>Inscription {SEASON_SLASH}</Heading>
       <div className={styles.sections}>
         <section className={styles.section}>
           <h3>Première adhésion</h3>
@@ -64,7 +64,7 @@ function Inscription() {
             Toutes les infos et les liens pour réadhérer sont dans la{' '}
             <strong>newsletter</strong> du mois d’août. Si vous ne l’avez pas
             reçue, <a href={`mailto:${EMAIL}`}>contactez-nous</a> ou demandez le{' '}
-            <strong>dépliant {SEASON}</strong> au prochain entraînement.
+            <strong>dépliant {SEASON_SLASH}</strong> au prochain entraînement.
           </p>
           <p>
             Pour les personnes concernées, pensez à nous envoyer le{' '}

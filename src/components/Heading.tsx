@@ -15,7 +15,7 @@ function Heading(props: Props) {
   return (
     <Tag className={heading}>
       <span className={title}>{children}</span>
-      {sub && <span className={styles_sub}>( {sub} )</span>}
+      {sub && <span className={styles_sub}>{sub}</span>}
     </Tag>
   );
 }

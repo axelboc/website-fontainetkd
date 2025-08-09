@@ -13,7 +13,7 @@
   }
 }
 
-@media (width >= 95em) {
+@media (width >= 90em) {
   .main {
     max-width: 85rem;
     margin: 0 auto;

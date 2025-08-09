@@ -33,8 +33,9 @@ function IndexPage(props: PageProps<IndexData>) {
         <main className={main}>
           <Sections
             photoKids={data.photoKids.childImageSharp.gatsbyImageData}
-            photoTeens={data.photoTeens.childImageSharp.gatsbyImageData}
-            photoAdults={data.photoAdults.childImageSharp.gatsbyImageData}
+            photoEnfants={data.photoEnfants.childImageSharp.gatsbyImageData}
+            photoAdos={data.photoAdos.childImageSharp.gatsbyImageData}
+            photoAdultes={data.photoAdultes.childImageSharp.gatsbyImageData}
           />
           <Horaires />
           <Cotisation />
@@ -48,19 +49,24 @@ function IndexPage(props: PageProps<IndexData>) {
 
 export const query = graphql`
   query {
-    photoKids: file(relativePath: { eq: "photo4.jpg" }) {
+    photoKids: file(relativePath: { eq: "photo1.jpg" }) {
       childImageSharp {
-        gatsbyImageData(width: 785)
+        gatsbyImageData(width: 664, height: 338)
       }
     }
-    photoTeens: file(relativePath: { eq: "photo5.jpg" }) {
+    photoEnfants: file(relativePath: { eq: "photo4.jpg" }) {
       childImageSharp {
-        gatsbyImageData(width: 785)
+        gatsbyImageData(width: 664, height: 338)
       }
     }
-    photoAdults: file(relativePath: { eq: "photo6.jpg" }) {
+    photoAdos: file(relativePath: { eq: "photo5.jpg" }) {
       childImageSharp {
-        gatsbyImageData(width: 785)
+        gatsbyImageData(width: 664, height: 338)
+      }
+    }
+    photoAdultes: file(relativePath: { eq: "photo6.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(width: 664, height: 338)
       }
     }
   }

@@ -104,6 +104,9 @@
 
 @media (width >= 65em) {
   .root {
+    max-width: 60em;
+    margin-right: auto;
+    margin-left: auto;
     background-color: var(--minsk);
   }
 
