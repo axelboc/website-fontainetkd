@@ -54,7 +54,7 @@ function Horaires() {
             </Fragment>
           ))}
           <p className={styles.asterisk}>
-            * confirmé&nbsp;: 4&nbsp;mois d'anciennenté&nbsp;+ comportement
+            * confirmé&nbsp;: 4&nbsp;mois d'ancienneté&nbsp;+ comportement
             adapté (respect,&nbsp;attention,&nbsp;etc.)
           </p>
         </div>
