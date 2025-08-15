@@ -7,16 +7,17 @@
   --link-water: #dcedff;
 
   /* Fonts */
-  --font-base: -apple-system, blinkmacsystemfont, 'Segoe UI', 'Roboto',
-    'Helvetica Neue', 'Arial', 'Noto Sans', sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  --font-heading-base: 'Impact Regular', haettenschweiler,
-    'Franklin Gothic Bold', charcoal, 'Helvetica Inserat',
-    'Bitstream Vera Sans Bold', 'Arial Black', sans serif;
+  --font-base:
+    -apple-system, blinkmacsystemfont, 'Segoe UI', 'Roboto', 'Helvetica Neue',
+    'Arial', 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-heading-base:
+    'Impact Regular', haettenschweiler, 'Franklin Gothic Bold', charcoal,
+    'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans serif;
   --font-heading: 'Areno', var(--font-heading-base);
   --font-title: 'Areno Rough', var(--font-heading-base);
-  --font-monospace: 'SFMono-Regular', consolas, 'Liberation Mono', menlo,
-    courier, monospace;
+  --font-monospace:
+    'SFMono-Regular', consolas, 'Liberation Mono', menlo, courier, monospace;
 
   /* Stacking */
   --zi-nav: 1;
