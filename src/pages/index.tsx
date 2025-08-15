@@ -1,10 +1,8 @@
 import '../styles/index.css';
 
-import type { PageProps } from 'gatsby';
-import { graphql } from 'gatsby';
-import type { IGatsbyImageData } from 'gatsby-plugin-image';
+import { graphql, type PageProps } from 'gatsby';
+import { type IGatsbyImageData } from 'gatsby-plugin-image';
 
-import { main, wrapper } from './index.module.css';
 import Banner from '../components/Banner';
 import Cotisation from '../components/Cotisation';
 import Footer from '../components/Footer';
@@ -14,6 +12,7 @@ import Meta from '../components/Meta';
 import Nav from '../components/Nav';
 // import NewsBar from '../components/NewsBar';
 import Sections from '../components/Sections';
+import styles from './index.module.css';
 
 type IndexData = Record<
   string,
@@ -29,8 +28,8 @@ function IndexPage(props: PageProps<IndexData>) {
       {/* <NewsBar /> */}
       <Banner />
       <Nav />
-      <div className={wrapper}>
-        <main className={main}>
+      <div className={styles.wrapper}>
+        <main className={styles.main}>
           <Sections
             photoKids={data.photoKids.childImageSharp.gatsbyImageData}
             photoEnfants={data.photoEnfants.childImageSharp.gatsbyImageData}

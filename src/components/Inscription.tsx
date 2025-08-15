@@ -1,8 +1,8 @@
 import { FiUserPlus } from 'react-icons/fi';
 
-import Heading from './Heading';
-import * as styles from './Inscription.module.css';
 import { EMAIL, SEASON, SEASON_SLASH } from '../data';
+import Heading from './Heading';
+import styles from './Inscription.module.css';
 
 function Inscription() {
   return (

@@ -1,9 +1,8 @@
-import type { IGatsbyImageData } from 'gatsby-plugin-image';
-import { GatsbyImage } from 'gatsby-plugin-image';
+import { GatsbyImage, type IGatsbyImageData } from 'gatsby-plugin-image';
 import { FiCheckCircle, FiSmile } from 'react-icons/fi';
 
 import Heading from './Heading';
-import * as styles from './Sections.module.css';
+import styles from './Sections.module.css';
 
 export interface SectionPhotos {
   photoKids: IGatsbyImageData;

@@ -10,7 +10,7 @@ import {
   FiVolume2,
 } from 'react-icons/fi';
 
-import * as styles from './Cotisation.module.css';
+import styles from './Cotisation.module.css';
 import Heading from './Heading';
 
 function Cotisation() {

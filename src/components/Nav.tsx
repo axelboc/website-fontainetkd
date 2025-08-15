@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import type SmoothScroll from 'smooth-scroll';
 
-import { sticky, nav, topLink, item, link } from './Nav.module.css';
 import Falcon from '../assets/falcon.svg';
+import styles from './Nav.module.css';
 
 function Nav() {
   useEffect(() => {
@@ -10,7 +10,7 @@ function Nav() {
 
     // `smooth-scroll` doesn't support SSR
     // eslint-disable-next-line promise/prefer-await-to-then
-    import(/* webpackChunkName: "smootScroll" */ 'smooth-scroll').then(
+    void import(/* webpackChunkName: "smootScroll" */ 'smooth-scroll').then(
       ({ default: SmoothScroll }) => {
         scroll = new SmoothScroll('[href*="#"]', {
           offset: 48,
@@ -25,24 +25,24 @@ function Nav() {
   }, []);
 
   return (
-    <div className={sticky}>
-      <nav className={nav}>
-        <a className={topLink} href="#top">
-          <span className={item}>
+    <div className={styles.sticky}>
+      <nav className={styles.nav}>
+        <a className={styles.topLink} href="#top">
+          <span className={styles.item}>
             <Falcon width="40" height="40" />
           </span>
         </a>
-        <a className={link} href="#sections">
-          <span className={item}>Sections</span>
+        <a className={styles.link} href="#sections">
+          <span className={styles.item}>Sections</span>
         </a>
-        <a className={link} href="#horaires">
-          <span className={item}>Horaires</span>
+        <a className={styles.link} href="#horaires">
+          <span className={styles.item}>Horaires</span>
         </a>
-        <a className={link} href="#cotisation">
-          <span className={item}>Cotisation</span>
+        <a className={styles.link} href="#cotisation">
+          <span className={styles.item}>Cotisation</span>
         </a>
-        <a className={link} href="#inscription">
-          <span className={item}>Inscription</span>
+        <a className={styles.link} href="#inscription">
+          <span className={styles.item}>Inscription</span>
         </a>
       </nav>
     </div>

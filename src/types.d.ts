@@ -9,11 +9,15 @@ declare module '*.png' {
 }
 
 declare module '*.svg' {
-  import type { FunctionComponent, SVGProps } from 'react';
+  import { type FunctionComponent, type SVGProps } from 'react';
 
   const ReactComponent: FunctionComponent<SVGProps<SVGSVGElement>>;
   export default ReactComponent;
 }
 
+declare module '*.module.css' {
+  const classes: Readonly<Record<string, string>>;
+  export default classes;
+}
+
 declare module '*.css';
-declare module '*.module.css';

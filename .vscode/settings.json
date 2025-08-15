@@ -1,7 +1,9 @@
 {
   "javascript.format.enable": false,
-  "javascript.validate.enable": false,
+  "typescript.format.enable": false,
   "json.format.enable": false,
+
+  "js/ts.implicitProjectConfig.checkJs": false,
   "css.validate": false,
 
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -11,7 +13,10 @@
     "source.fixAll.stylelint": "explicit"
   },
 
-  "javascript.preferences.importModuleSpecifier": "relative",
+  "typescript.tsdk": "node_modules\\typescript\\lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
-  "typescript.tsdk": "node_modules\\typescript\\lib"
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
+
+  "eslint.codeAction.disableRuleComment": { "location": "sameLine" }
 }

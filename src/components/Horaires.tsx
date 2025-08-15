@@ -1,9 +1,9 @@
 import { Fragment } from 'react';
 import { FiExternalLink } from 'react-icons/fi';
 
-import Heading from './Heading';
-import * as styles from './Horaires.module.css';
 import { LOCATIONS, SEASON_SLASH, TIMES } from '../data';
+import Heading from './Heading';
+import styles from './Horaires.module.css';
 
 function Horaires() {
   return (
