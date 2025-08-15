@@ -3,7 +3,7 @@ import { FiExternalLink } from 'react-icons/fi';
 
 import { LOCATIONS, SEASON_SLASH, TIMES } from '../data';
 import Heading from './Heading';
-import styles from './Horaires.module.css';
+import * as styles from './Horaires.module.css';
 
 function Horaires() {
   return (

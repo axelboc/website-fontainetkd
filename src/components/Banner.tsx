@@ -1,5 +1,5 @@
 import Logo from '../assets/fontaine-taekwondo.svg';
-import styles from './Banner.module.css';
+import * as styles from './Banner.module.css';
 
 function Banner() {
   return (

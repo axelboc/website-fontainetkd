@@ -1,4 +1,4 @@
-import styles from './NewsBar.module.css';
+import * as styles from './NewsBar.module.css';
 
 function NewsBar() {
   return (

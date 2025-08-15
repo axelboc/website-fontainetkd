@@ -6,6 +6,11 @@ const opts = detectOpts(import.meta.dirname);
 const config = defineConfig([
   globalIgnores(['.cache/', 'public/']),
   ...createConfig(opts),
+  {
+    rules: {
+      'import/no-namespace': 'off',
+    },
+  },
 ]);
 
 export default config;

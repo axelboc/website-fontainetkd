@@ -12,7 +12,7 @@ import Meta from '../components/Meta';
 import Nav from '../components/Nav';
 // import NewsBar from '../components/NewsBar';
 import Sections from '../components/Sections';
-import styles from './index.module.css';
+import * as styles from './index.module.css';
 
 type IndexData = Record<
   string,

@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import type SmoothScroll from 'smooth-scroll';
 
 import Falcon from '../assets/falcon.svg';
-import styles from './Nav.module.css';
+import * as styles from './Nav.module.css';
 
 function Nav() {
   useEffect(() => {

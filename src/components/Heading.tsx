@@ -1,6 +1,6 @@
 import { type ReactNode } from 'react';
 
-import styles from './Heading.module.css';
+import * as styles from './Heading.module.css';
 
 interface Props {
   sub?: string;
