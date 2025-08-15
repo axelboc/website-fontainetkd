@@ -1,10 +1,11 @@
-const path = require('path');
-const postcssBrowserReporter = require('postcss-browser-reporter');
-const postcssImport = require('postcss-import');
-const postcssPresetEnv = require('postcss-preset-env');
-const postcssReporter = require('postcss-reporter');
+import path from 'node:path';
 
-module.exports = {
+import postcssBrowserReporter from 'postcss-browser-reporter';
+import postcssImport from 'postcss-import';
+import postcssPresetEnv from 'postcss-preset-env';
+import postcssReporter from 'postcss-reporter';
+
+const config = {
   siteMetadata: {
     siteUrl: 'https://fontainetkd.fr',
   },
@@ -24,7 +25,7 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'assets',
-        path: path.join(__dirname, 'src', 'assets'),
+        path: path.join(import.meta.dirname, 'src', 'assets'),
       },
     },
     'gatsby-plugin-image',
@@ -35,3 +36,5 @@ module.exports = {
     'gatsby-plugin-sitemap',
   ],
 };
+
+export default config;
