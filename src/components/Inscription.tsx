@@ -23,8 +23,8 @@ function Inscription() {
           <div className={styles.actionBlock}>
             <p>
               Les sections <strong>kids (4-5)</strong> et{' '}
-              <strong>enfants (6-9)</strong> sont presque à capacité — l'attente
-              est estimée à <strong>2 semaines</strong>.
+              <strong>enfants (6-9)</strong> sont à capacité. Il se peut que des
+              places se libèrent en janvier.
             </p>
             <p>
               Il reste de la place dans les sections <strong>ados</strong> et{' '}
