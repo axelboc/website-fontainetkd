@@ -22,13 +22,12 @@ function Inscription() {
           </p>
           <div className={styles.actionBlock}>
             <p>
-              Les sections <strong>kids (4-5)</strong> et{' '}
-              <strong>enfants (6-9)</strong> sont à capacité. Il se peut que des
-              places se libèrent en janvier.
+              Les sections <strong>kids (4-5)</strong>,{' '}
+              <strong>enfants (6-9)</strong> et <strong>adultes</strong> sont à
+              capacité. Il se peut que des places se libèrent en janvier.
             </p>
             <p>
-              Il reste de la place dans les sections <strong>ados</strong> et{' '}
-              <strong>adultes</strong>.
+              Il reste de la place dans la section <strong>ados</strong>.
             </p>
             <a
               href="https://framaforms.org/pre-inscription-fontaine-taekwon-do-1754658606"
