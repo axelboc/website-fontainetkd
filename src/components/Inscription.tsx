@@ -24,7 +24,7 @@ function Inscription() {
             <p>
               Les sections <strong>kids (4-5)</strong>,{' '}
               <strong>enfants (6-9)</strong> et <strong>adultes</strong> sont à
-              capacité. Il se peut que des places se libèrent en janvier.
+              capacité.
             </p>
             <p>
               Il reste de la place dans la section <strong>ados</strong>.
