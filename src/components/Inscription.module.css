@@ -21,6 +21,11 @@
   color: var(--lochmara);
 }
 
+.section > .paymentHeading {
+  margin-top: -3rem;
+  padding-top: 4rem;
+}
+
 .extra {
   display: block;
   margin-bottom: 0.25rem;

@@ -84,7 +84,9 @@ function Inscription() {
             réception complète de la cotisation, aides à l’adhésion comprises
             (formulaire d’aide à l’adhésion, carte Tatoo,&nbsp;etc.)
           </p>
-          <h4>Modes de règlement</h4>
+          <h4 id="reglement" className={styles.paymentHeading}>
+            Modes de règlement
+          </h4>
           <ul>
             <li>
               <strong>Virement bancaire</strong>&nbsp;

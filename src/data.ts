@@ -4,11 +4,9 @@ export const SEASON_SLASH = SEASON.replace('-', ' / ');
 export const EMAIL = 'asf.taekwondo@gmail.com';
 
 enum Location {
-  GymnaseRV = 'GymnaseRV',
   GymnaseAB = 'GymnaseAB',
   DojoLR = 'DojangLR',
   ParcKM = 'ParcKM',
-  ParcGP = 'ParcGP',
 }
 
 const ADULTES_15 = 'Adultes (15+)';
@@ -26,10 +24,6 @@ interface LocationInfo {
 }
 
 export const LOCATIONS: Record<Location, LocationInfo> = {
-  [Location.GymnaseRV]: {
-    name: 'Gymnase R. Vial',
-    gmapUrl: 'https://goo.gl/maps/SXapWD8XvWmMDSCNA',
-  },
   [Location.GymnaseAB]: {
     name: 'Gymnase Bergès',
     gmapUrl: 'https://goo.gl/maps/hHby3Woc6KHkD7Au5',
@@ -41,10 +35,6 @@ export const LOCATIONS: Record<Location, LocationInfo> = {
   [Location.ParcKM]: {
     name: 'Parc Karl Marx',
     gmapUrl: 'https://g.page/FontaineTKD?share',
-  },
-  [Location.ParcGP]: {
-    name: 'Parc Pompidou',
-    gmapUrl: 'https://goo.gl/maps/YCdEyVtTEnr9DAof9',
   },
 };
 
