@@ -1,6 +1,6 @@
 import { FiUserPlus } from 'react-icons/fi';
 
-import { EMAIL, SEASON, SEASON_SLASH } from '../data';
+import { EMAIL, PREREGISTRATION_STATUS, SEASON, SEASON_SLASH } from '../data';
 import Heading from './Heading';
 import * as styles from './Inscription.module.css';
 
@@ -20,14 +20,16 @@ function Inscription() {
             de vous accueillir, vous ou vos enfants, de la manière la plus
             fiable et équitable possible.
           </p>
-          <div className={styles.actionBlock}>
+          <div
+            className={styles.actionBlock}
+            data-status={PREREGISTRATION_STATUS}
+          >
             <p>
-              Les sections <strong>kids (4-5)</strong>,{' '}
-              <strong>enfants (6-9)</strong> et <strong>adultes</strong> sont à
-              capacité.
-            </p>
-            <p>
-              Il reste de la place dans la section <strong>ados</strong>.
+              Nous acceptons actuellement les pré‑inscriptions dans{' '}
+              <strong className={styles.status}>
+                toutes&nbsp;les&nbsp;sections
+              </strong>{' '}
+              (kids, enfants, ados, adultes).
             </p>
             <a
               href="https://framaforms.org/pre-inscription-fontaine-taekwon-do-1754658606"
@@ -72,7 +74,6 @@ function Inscription() {
             <a
               href={`aide_${SEASON}.pdf`}
               download={`Aide à l'adhésion ${SEASON} - Ville de Fontaine.pdf`}
-              rel="nofollow"
             >
               formulaire d’aide à l’adhésion
             </a>{' '}
@@ -82,7 +83,8 @@ function Inscription() {
             Attention, l’adhésion au club et les garanties d’assurance de la
             fédération <em>Sports pour tous</em> ne sont effectives qu’après
             réception complète de la cotisation, aides à l’adhésion comprises
-            (formulaire d’aide à l’adhésion, carte Tatoo,&nbsp;etc.)
+            (formulaire d’aide à l’adhésion et justificatifs, carte
+            Tatoo,&nbsp;etc.)
           </p>
           <h4 id="reglement" className={styles.paymentHeading}>
             Modes de règlement

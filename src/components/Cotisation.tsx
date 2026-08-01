@@ -47,8 +47,8 @@ function Cotisation() {
               <FiStar className={styles.icon} /> Gratuité pour les réfugiés
             </li>
             <li>
-              <FiCheckCircle className={styles.icon} /> Uniforme inclus
-              (sections enfants/ados/adultes)
+              <FiCheckCircle className={styles.icon} /> Uniforme inclus (à
+              partir de 6 ans)
             </li>
             <li>
               <FiCalendar className={styles.icon} /> Inscriptions ouvertes toute

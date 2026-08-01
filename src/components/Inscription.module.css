@@ -32,16 +32,29 @@
   line-height: 1.4;
 }
 
-.statusOk {
-  color: darkgreen;
-}
-
 .actionBlock {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
-  border-left: 0.5rem solid var(--candlelight);
+  border-left: 0.5rem solid var(--status-color-border, var(--status-color));
+}
+
+.actionBlock[data-status='open'] {
+  --status-color: darkgreen;
+}
+
+.actionBlock[data-status='limited'] {
+  --status-color: darkgoldenrod;
+  --status-color-border: var(--candlelight);
+}
+
+.actionBlock[data-status='closed'] {
+  --status-color: crimson;
+}
+
+.status {
+  color: var(--status-color);
 }
 
 .preRegisterBtn {

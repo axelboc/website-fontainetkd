@@ -1,22 +1,16 @@
-export const SEASON = '2025-2026';
+export const SEASON = '2026-2027';
 export const SEASON_SLASH = SEASON.replace('-', ' / ');
 
 export const EMAIL = 'asf.taekwondo@gmail.com';
+
+type Status = 'open' | 'limited' | 'closed';
+export const PREREGISTRATION_STATUS: Status = 'open';
 
 enum Location {
   GymnaseAB = 'GymnaseAB',
   DojoLR = 'DojangLR',
   ParcKM = 'ParcKM',
 }
-
-const ADULTES_15 = 'Adultes (15+)';
-const ADOS_10_11 = 'Ados (10-11)';
-const ADOS_12_15 = 'Ados (12-15)';
-const ADOS_CONF_11_14 = 'Ados confirmés* (11-14)';
-const ENFANTS_6_9 = 'Enfants (6-9)';
-const ENFANTS_CONF_6_10 = 'Enfants confirmés* (6-10)';
-const ENFANTS_CONF_9 = 'Enfants confirmés* (9)';
-const KIDS_4_5 = 'Kids (4-5)';
 
 interface LocationInfo {
   name: string;
@@ -26,15 +20,15 @@ interface LocationInfo {
 export const LOCATIONS: Record<Location, LocationInfo> = {
   [Location.GymnaseAB]: {
     name: 'Gymnase Bergès',
-    gmapUrl: 'https://goo.gl/maps/hHby3Woc6KHkD7Au5',
+    gmapUrl: 'https://maps.app.goo.gl/vJNiw7pqRjHQZQJB7',
   },
   [Location.DojoLR]: {
     name: 'Dojo La Rizza',
-    gmapUrl: 'https://g.page/FontaineTKD?share',
+    gmapUrl: 'https://maps.app.goo.gl/3h9XHHjZAe8Mg5gm7',
   },
   [Location.ParcKM]: {
     name: 'Parc Karl Marx',
-    gmapUrl: 'https://g.page/FontaineTKD?share',
+    gmapUrl: 'https://maps.app.goo.gl/3h9XHHjZAe8Mg5gm7',
   },
 };
 
@@ -56,13 +50,13 @@ export const TIMES: Record<string, Time[]> = {
     {
       from: '17:15',
       to: '18:00',
-      groups: [{ sections: [ENFANTS_CONF_6_10] }],
+      groups: [{ sections: ['Enfants confirmés* (6-10)'] }],
       location: Location.GymnaseAB,
     },
     {
       from: '18:00',
       to: '19:30',
-      groups: [{ sections: [ADULTES_15, ADOS_CONF_11_14] }],
+      groups: [{ sections: ['Adultes (15+)', 'Ados confirmés* (12-14)'] }],
       location: Location.GymnaseAB,
     },
   ],
@@ -70,31 +64,31 @@ export const TIMES: Record<string, Time[]> = {
     {
       from: '14:15',
       to: '15:00',
-      groups: [{ sections: [KIDS_4_5] }],
+      groups: [{ sections: ['Kids (4-5)'] }],
       location: Location.GymnaseAB,
     },
     {
       from: '15:00',
       to: '16:00',
-      groups: [{ sections: [ENFANTS_6_9] }],
+      groups: [{ sections: ['Enfants (6-9)'] }],
       location: Location.GymnaseAB,
     },
     {
       from: '16:00',
       to: '17:00',
-      groups: [{ sections: [ADOS_10_11, ENFANTS_CONF_9] }],
+      groups: [{ sections: ['Préados (10-11)', 'Enfants confirmés* (9)'] }],
       location: Location.GymnaseAB,
     },
     {
       from: '17:00',
       to: '18:00',
-      groups: [{ sections: [ADOS_12_15] }],
+      groups: [{ sections: ['Ados (12-15)', 'Préados confirmés* (11)'] }],
       location: Location.GymnaseAB,
     },
     {
       from: '19:30',
       to: '21:00',
-      groups: [{ sections: [ADULTES_15, ADOS_CONF_11_14] }],
+      groups: [{ sections: ['Adultes (15+)'] }],
       location: Location.DojoLR,
     },
   ],
@@ -104,12 +98,12 @@ export const TIMES: Record<string, Time[]> = {
       to: '11:30',
       groups: [
         {
-          frequency: '1er du mois',
-          sections: [ADULTES_15, ADOS_CONF_11_14],
+          frequency: '2ème du mois',
+          sections: ['Adultes (15+)', 'Ados confirmés* (12-14)'],
         },
         {
-          frequency: '3ème du mois',
-          sections: ['Ceintures vertes et plus (11+)'],
+          frequency: '4ème du mois',
+          sections: ['Ceintures vertes et plus (12+)'],
         },
       ],
       location: Location.DojoLR,
