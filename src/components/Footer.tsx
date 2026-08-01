@@ -17,7 +17,7 @@ function Footer() {
         <FiLock className={styles.icon} />
         Consultez notre{' '}
         <a
-          href="rgpd_2026.08.01.pdf"
+          href="rgpd.pdf"
           download="Politique de confidentialité.pdf"
           rel="nofollow"
         >
