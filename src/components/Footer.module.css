@@ -6,12 +6,17 @@
 }
 
 .socialMedia {
-  margin-bottom: 1.75rem;
+  margin-bottom: 0.25rem;
   font-size: 112.5%;
 }
 
+.rgpd {
+  margin-bottom: 1.75rem;
+  font-size: 87.5%;
+}
+
 .icon {
-  margin: 0 1rem -0.125em;
+  margin: 0 0.5em -0.125em;
 }
 
 .iftLink {

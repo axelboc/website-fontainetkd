@@ -1,4 +1,4 @@
-import { FiShare2 } from 'react-icons/fi';
+import { FiLock, FiShare2 } from 'react-icons/fi';
 
 import itfLogoSrc from '../assets/itf-logo.png';
 import * as styles from './Footer.module.css';
@@ -12,6 +12,17 @@ function Footer() {
         <a href="https://www.facebook.com/FontaineTKD/">Facebook</a>
         &nbsp;et&nbsp;
         <a href="https://www.instagram.com/fontainetkd/">Instagram</a>
+      </p>
+      <p className={styles.rgpd}>
+        <FiLock className={styles.icon} />
+        Consultez notre{' '}
+        <a
+          href="rgpd_2026.08.01.pdf"
+          download="Politique de confidentialité.pdf"
+          rel="nofollow"
+        >
+          politique de confidentialité
+        </a>
       </p>
       <div>
         <a
