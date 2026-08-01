@@ -50,7 +50,7 @@ export const TIMES: Record<string, Time[]> = {
     {
       from: '17:15',
       to: '18:00',
-      groups: [{ sections: ['Enfants confirmés* (6-10)'] }],
+      groups: [{ sections: ['Enfants confirmés* (7-10)'] }],
       location: Location.GymnaseAB,
     },
     {
