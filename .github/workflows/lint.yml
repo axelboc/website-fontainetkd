@@ -15,7 +15,9 @@ jobs:
           node-version-file: 'package.json'
 
       - name: Install ⚙️
-        run: pnpm install
+        uses: pnpm/setup@v2
+        with:
+          cache: true
 
       - name: Build 🛠
         run: pnpm build
