@@ -30,7 +30,7 @@ function Sections(props: SectionPhotos) {
         <GatsbyImage image={photoKids} alt="" />
       </article>
       <article className={styles.section}>
-        <Heading sub="6-9 ans">Section enfants</Heading>
+        <Heading sub="6-8 ans">Section enfants</Heading>
         <ul className={styles.list}>
           <li>
             <FiSmile className={styles.icon} /> Initiation ludique au Taekwon‑Do
@@ -43,7 +43,7 @@ function Sections(props: SectionPhotos) {
         <GatsbyImage image={photoEnfants} alt="" />
       </article>
       <article className={styles.section}>
-        <Heading sub="10-15 ans">Section ados</Heading>
+        <Heading sub="9-15 ans">Section ados</Heading>
         <ul className={styles.list}>
           <li>
             <FiCheckCircle className={styles.icon} /> Pratique complète :

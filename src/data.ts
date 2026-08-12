@@ -70,13 +70,13 @@ export const TIMES: Record<string, Time[]> = {
     {
       from: '15:00',
       to: '16:00',
-      groups: [{ sections: ['Enfants (6-9)'] }],
+      groups: [{ sections: ['Enfants (6-8)'] }],
       location: Location.GymnaseAB,
     },
     {
       from: '16:00',
       to: '17:00',
-      groups: [{ sections: ['Préados (10-11)', 'Enfants confirmés* (9)'] }],
+      groups: [{ sections: ['Préados (9-11)'] }],
       location: Location.GymnaseAB,
     },
     {
