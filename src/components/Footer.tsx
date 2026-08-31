@@ -44,6 +44,11 @@ function Footer() {
             <abbr title="All Europe Taekwon-Do Federation">ITF Europe</abbr>
           </a>
         </p>
+        <p className={styles.legalInfo}>
+          Association loi 1901 – SIREN : 799323175
+          <br />
+          Maison des sportifs, parc Karl Marx, 38600 FONTAINE
+        </p>
       </div>
     </footer>
   );

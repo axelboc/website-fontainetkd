@@ -33,7 +33,13 @@
 }
 
 .localFeds {
-  margin-bottom: 0;
+  margin-bottom: 0.75rem;
   font-weight: 600;
   font-size: 75%;
+}
+
+.legalInfo {
+  margin-bottom: 0;
+  font-size: 60%;
+  line-height: 1.2;
 }
