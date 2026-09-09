@@ -25,11 +25,15 @@ function Inscription() {
             data-status={PREREGISTRATION_STATUS}
           >
             <p>
-              Nous acceptons actuellement les pré‑inscriptions dans{' '}
-              <strong className={styles.status}>
-                toutes&nbsp;les&nbsp;sections
-              </strong>{' '}
-              (kids, enfants, ados, adultes).
+              Les sections <strong>kids (4-5)</strong>, et{' '}
+              <strong>enfants (6-8)</strong> sont à capacité.
+            </p>
+            <p>
+              Les section <strong>préados (9-11)</strong> et{' '}
+              <strong>adultes</strong> sont presque à capacité.
+            </p>
+            <p>
+              Il reste de la place dans la section <strong>ados</strong>.
             </p>
             <a
               href="https://framaforms.org/pre-inscription-fontaine-taekwon-do-1754658606"

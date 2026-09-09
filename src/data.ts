@@ -4,7 +4,7 @@ export const SEASON_SLASH = SEASON.replace('-', ' / ');
 export const EMAIL = 'asf.taekwondo@gmail.com';
 
 type Status = 'open' | 'limited' | 'closed';
-export const PREREGISTRATION_STATUS: Status = 'open';
+export const PREREGISTRATION_STATUS: Status = 'limited';
 
 enum Location {
   GymnaseAB = 'GymnaseAB',
