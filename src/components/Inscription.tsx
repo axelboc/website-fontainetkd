@@ -25,11 +25,10 @@ function Inscription() {
             data-status={PREREGISTRATION_STATUS}
           >
             <p>
-              Les sections <strong>kids (4-5)</strong>, et{' '}
-              <strong>enfants (6-8)</strong> sont à capacité.
+              La section <strong>enfants (6-8)</strong> est à capacité.
             </p>
             <p>
-              Les section <strong>préados (9-11)</strong> et{' '}
+              Les section <strong>kids (4-5)</strong>, <strong>préados (9-11)</strong> et{' '}
               <strong>adultes</strong> sont presque à capacité.
             </p>
             <p>
