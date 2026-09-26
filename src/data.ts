@@ -1,21 +1,21 @@
+import {
+  Location,
+  type LocationInfo,
+  Section,
+  type Status,
+  type Time,
+} from './models';
+
 export const SEASON = '2026-2027';
 export const SEASON_SLASH = SEASON.replace('-', ' / ');
 
 export const EMAIL = 'asf.taekwondo@gmail.com';
 
-type Status = 'open' | 'limited' | 'closed';
-export const PREREGISTRATION_STATUS: Status = 'limited';
-
-enum Location {
-  GymnaseAB = 'GymnaseAB',
-  DojoLR = 'DojangLR',
-  ParcKM = 'ParcKM',
-}
-
-interface LocationInfo {
-  name: string;
-  gmapUrl: string;
-}
+export const PREREGISTRATIONS: Record<Status, Section[]> = {
+  open: [Section.Kids, Section.Ados, Section.Adultes],
+  limited: [],
+  closed: [Section.Enfants, Section.Preados],
+};
 
 export const LOCATIONS: Record<Location, LocationInfo> = {
   [Location.GymnaseAB]: {
@@ -32,19 +32,6 @@ export const LOCATIONS: Record<Location, LocationInfo> = {
   },
 };
 
-interface Time {
-  from: string;
-  to: string;
-  groups: Group[];
-  location: Location;
-  variant?: string;
-}
-
-interface Group {
-  frequency?: string;
-  sections: string[];
-}
-
 export const TIMES: Record<string, Time[]> = {
   Lundi: [
     {
@@ -56,7 +43,7 @@ export const TIMES: Record<string, Time[]> = {
     {
       from: '18:00',
       to: '19:30',
-      groups: [{ sections: ['Adultes (15+)', 'Ados confirmés* (12-14)'] }],
+      groups: [{ sections: [Section.Adultes, 'Ados confirmés* (12-14)'] }],
       location: Location.GymnaseAB,
     },
   ],
@@ -64,31 +51,31 @@ export const TIMES: Record<string, Time[]> = {
     {
       from: '14:15',
       to: '15:00',
-      groups: [{ sections: ['Kids (4-5)'] }],
+      groups: [{ sections: [Section.Kids] }],
       location: Location.GymnaseAB,
     },
     {
       from: '15:00',
       to: '16:00',
-      groups: [{ sections: ['Enfants (6-8)'] }],
+      groups: [{ sections: [Section.Enfants] }],
       location: Location.GymnaseAB,
     },
     {
       from: '16:00',
       to: '17:00',
-      groups: [{ sections: ['Préados (9-11)'] }],
+      groups: [{ sections: [Section.Preados] }],
       location: Location.GymnaseAB,
     },
     {
       from: '17:00',
       to: '18:00',
-      groups: [{ sections: ['Ados (12-15)', 'Préados confirmés* (11)'] }],
+      groups: [{ sections: [Section.Ados, 'Préados confirmés* (11)'] }],
       location: Location.GymnaseAB,
     },
     {
       from: '19:30',
       to: '21:00',
-      groups: [{ sections: ['Adultes (15+)'] }],
+      groups: [{ sections: [Section.Adultes] }],
       location: Location.DojoLR,
     },
   ],
@@ -99,7 +86,7 @@ export const TIMES: Record<string, Time[]> = {
       groups: [
         {
           frequency: '2ème du mois',
-          sections: ['Adultes (15+)', 'Ados confirmés* (12-14)'],
+          sections: [Section.Adultes, 'Ados confirmés* (12-14)'],
         },
         {
           frequency: '4ème du mois',

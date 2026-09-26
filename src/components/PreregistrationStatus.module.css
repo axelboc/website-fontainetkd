@@ -1,0 +1,23 @@
+.status > p {
+  margin: 0 0 0.5rem;
+  padding: 0 1rem 0.125rem;
+  font-size: 90%;
+  border-left: 1.5rem solid var(--status-color-border, var(--status-color));
+}
+
+.status > p[data-status='open'] {
+  --status-color: darkgreen;
+}
+
+.status > p[data-status='limited'] {
+  --status-color: darkgoldenrod;
+  --status-color-border: var(--candlelight);
+}
+
+.status > p[data-status='closed'] {
+  --status-color: crimson;
+}
+
+.status b {
+  font-weight: 600;
+}

@@ -1,8 +1,9 @@
 import { FiUserPlus } from 'react-icons/fi';
 
-import { EMAIL, PREREGISTRATION_STATUS, SEASON, SEASON_SLASH } from '../data';
+import { EMAIL, SEASON, SEASON_SLASH } from '../data';
 import Heading from './Heading';
 import * as styles from './Inscription.module.css';
+import PreregistrationStatus from './PreregistrationStatus';
 
 function Inscription() {
   return (
@@ -10,63 +11,52 @@ function Inscription() {
       <Heading>Inscription {SEASON_SLASH}</Heading>
       <div className={styles.sections}>
         <section className={styles.section}>
-          <h3>Première adhésion</h3>
-          <p>
-            <strong>Bienvenue et merci de votre intérêt&nbsp;!</strong>
+          <h3>Faire une séance d'essai</h3>
+          <p className={styles.sectionIntro}>
+            Bienvenue et merci de votre intérêt&nbsp;!
           </p>
           <p>
-            Les places étant limitées, nous avons mis en place un système de
-            pré‑inscription sur <strong>liste d’attente</strong> qui nous permet
-            de vous accueillir, vous ou vos enfants, de la manière la plus
-            fiable et équitable possible.
+            Une <b>séance d'essai</b> est obligatoire avant de pouvoir adhérer
+            au club pour la première fois.
           </p>
-          <div
-            className={styles.actionBlock}
-            data-status={PREREGISTRATION_STATUS}
-          >
-            <p>
-              La section <strong>enfants (6-8)</strong> est à capacité.
-            </p>
-            <p>
-              Les sections <strong>kids (4-5)</strong> et{' '}
-              <strong>préados (9-11)</strong> sont presque à capacité.
-            </p>
-            <p>
-              Il reste de la place dans les sections <strong>ados</strong> et{' '}
-              <strong>adultes</strong>.
-            </p>
+          <p>
+            Les places étant limitées, nous avons mis en place un système de{' '}
+            <strong>liste d’attente</strong> qui nous permet de vous accueillir,
+            vous ou vos enfants, de la manière la plus fiable et équitable
+            possible.
+          </p>
+          <div className={styles.preRegistration}>
+            <PreregistrationStatus />
             <a
-              href="https://framaforms.org/pre-inscription-fontaine-taekwon-do-1754658606"
+              href="https://framaforms.org/seance-dessai-fontaine-taekwon-do-1790427870"
               target="_blank"
               rel="noreferrer"
               className={styles.preRegisterBtn}
             >
-              <FiUserPlus className={styles.preRegisterIcon} /> Accéder au
-              formulaire de pré‑inscription
+              <FiUserPlus className={styles.preRegisterIcon} /> Demander une
+              séance d'essai
             </a>
           </div>
           <p>
-            Nous prendrons contact avec vous une fois votre pré‑inscription
-            reçue pour vous confirmer (ou non) la <strong>disponibilité</strong>{' '}
-            du ou des créneaux qui vous correspondent, et pour vous inviter à
-            une <strong>séance d’essai</strong>.
+            Une fois votre demande reçue, nous prendrons contact avec vous pour
+            vous confirmer (ou non) la <strong>disponibilité</strong> du ou des
+            créneaux qui vous correspondent, et pour vous inviter à une{' '}
+            <strong>séance d’essai</strong>.
           </p>
           <p>
             À l’issue de la séance d’essai, nous vous remettrons un dépliant
-            avec toutes les infos à connaître pour <strong>adhérer</strong> au
-            club. Vous pourrez alors adhérer directement en ligne, ou bien faire
-            une à deux séances d’essai supplémentaires pour finir de vous
-            décider.
+            avec toutes les infos à connaître pour{' '}
+            <strong>adhérer au club</strong>. Vous pourrez alors adhérer
+            directement en ligne, ou bien faire une à deux séances d’essai
+            supplémentaires pour finir de vous décider.
           </p>
           <p>
             Une question ? <a href={`mailto:${EMAIL}`}>Contactez-nous&nbsp;!</a>
           </p>
         </section>
         <section className={styles.section}>
-          <h3>Renouvellement</h3>
-          <p>
-            <strong>Contents de vous revoir&nbsp;!</strong>
-          </p>
+          <h3>Renouveler mon adhésion</h3>
+          <p className={styles.sectionIntro}>Contents de vous revoir&nbsp;!</p>
           <p>
             Toutes les infos et les liens pour réadhérer sont dans la{' '}
             <strong>newsletter</strong> du mois d’août. Si vous ne l’avez pas
