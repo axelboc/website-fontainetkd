@@ -12,9 +12,9 @@ export const SEASON_SLASH = SEASON.replace('-', ' / ');
 export const EMAIL = 'asf.taekwondo@gmail.com';
 
 export const PREREGISTRATIONS: Record<Status, Section[]> = {
-  open: [Section.Kids, Section.Ados, Section.Adultes],
+  open: [Section.Ados, Section.Adultes],
   limited: [],
-  closed: [Section.Enfants, Section.Preados],
+  closed: [Section.Kids, Section.Enfants, Section.Preados],
 };
 
 export const LOCATIONS: Record<Location, LocationInfo> = {
