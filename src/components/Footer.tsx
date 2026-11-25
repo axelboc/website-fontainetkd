@@ -1,4 +1,4 @@
-import { FiLock, FiShare2 } from 'react-icons/fi';
+import { FiShare2 } from 'react-icons/fi';
 
 import itfLogoSrc from '../assets/itf-logo.png';
 import * as styles from './Footer.module.css';
@@ -13,15 +13,20 @@ function Footer() {
         &nbsp;et&nbsp;
         <a href="https://www.instagram.com/fontainetkd/">Instagram</a>
       </p>
-      <p className={styles.rgpd}>
-        <FiLock className={styles.icon} />
-        Consultez notre{' '}
+      <p className={styles.moreLinks}>
         <a
           href="rgpd.pdf"
           download="Politique de confidentialité.pdf"
           rel="nofollow"
         >
-          politique de confidentialité
+          Politique de confidentialité
+        </a>{' '}
+        ·{' '}
+        <a
+          href="https://www.helloasso.com/associations/fontaine-taekwon-do/boutiques/merchandising-1"
+          rel="nofollow"
+        >
+          Boutique HelloAsso
         </a>
       </p>
       <div>

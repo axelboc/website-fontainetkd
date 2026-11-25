@@ -10,9 +10,13 @@
   font-size: 112.5%;
 }
 
-.rgpd {
+.moreLinks {
   margin-bottom: 1.75rem;
   font-size: 87.5%;
+}
+
+.moreLinks > a {
+  white-space: nowrap;
 }
 
 .icon {
